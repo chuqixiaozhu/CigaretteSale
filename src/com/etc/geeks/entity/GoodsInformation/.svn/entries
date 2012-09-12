@@ -1,14 +1,14 @@
 10
 
 dir
-203420
+204266
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsInformation
 http://10.188.181.187/repos
 
 
 
-2012-09-11T07:20:56.080055Z
-203216
+2012-09-12T06:24:59.968906Z
+204117
 sx_java_120827_pengzhen
 
 
@@ -28,7 +28,7 @@ ef9f6835-dc2d-4211-bea4-54f3b24ac1c9
 
 Unit.java
 file
-203582
+
 
 
 
@@ -198,14 +198,14 @@ sx_java_120827_pengzhen
 
 Goods.java
 file
-203841
 
 
 
-2012-09-12T02:33:44.737012Z
-a2f9a81218e343f2210e9f46be390fa0
-2012-09-12T03:01:14.945779Z
-203841
+
+2012-09-12T05:56:10.377637Z
+ccfc92a16b5103f68450d580f8ce0f84
+2012-09-12T06:24:59.968906Z
+204117
 sx_java_120827_pengzhen
 
 
@@ -228,7 +228,7 @@ sx_java_120827_pengzhen
 
 
 
-4734
+5342
 
 GoodsLargeClass.java
 file

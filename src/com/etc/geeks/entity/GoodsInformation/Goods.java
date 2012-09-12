@@ -8,7 +8,7 @@ public class Goods {
 	private String supplierId;
 	private String goodsLargeClassId;
 	private String goodsSmallClassId;
-	private long goodsCode;
+	private String goodsCode;
 	private String goodsSize;
 	private String barCode1;
 	private String barCode2;
@@ -19,7 +19,7 @@ public class Goods {
 	private double memberprice;
 	
 	public Goods(String goodsId, String goodsName, String supplierId,
-			String goodsLargeClassId, String goodsSmallClassId, long goodsCode,
+			String goodsLargeClassId, String goodsSmallClassId, String goodsCode,
 			String size, String barCode1, String barCode2, String barCode3,
 			String unit, double wholeSalePrice, double retailPrice,
 			double memberprice) {
@@ -106,13 +106,13 @@ public class Goods {
 	/**
 	 * @return the goodsCode
 	 */
-	public long getGoodsCode() {
+	public String getGoodsCode() {
 		return goodsCode;
 	}
 	/**
 	 * @param goodsCode the goodsCode to set
 	 */
-	public void setGoodsCode(long goodsCode) {
+	public void setGoodsCode(String goodsCode) {
 		this.goodsCode = goodsCode;
 	}
 	/**
@@ -210,5 +210,19 @@ public class Goods {
 	 */
 	public void setMemberprice(double memberprice) {
 		this.memberprice = memberprice;
-	}	
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Goods [barCode1=" + barCode1 + ", barCode2=" + barCode2
+				+ ", barCode3=" + barCode3 + ", goodsCode=" + goodsCode
+				+ ", goodsId=" + goodsId + ", goodsLargeClassId="
+				+ goodsLargeClassId + ", goodsName=" + goodsName
+				+ ", goodsSize=" + goodsSize + ", goodsSmallClassId="
+				+ goodsSmallClassId + ", memberprice=" + memberprice
+				+ ", retailPrice=" + retailPrice + ", supplierId=" + supplierId
+				+ ", unit=" + unit + ", wholeSalePrice=" + wholeSalePrice + "]";
+	}
 }

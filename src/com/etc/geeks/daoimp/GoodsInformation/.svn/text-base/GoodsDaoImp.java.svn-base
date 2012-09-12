@@ -1,6 +1,10 @@
 package com.etc.geeks.daoimp.GoodsInformation;
 
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
+
+import oracle.jdbc.rowset.OracleCachedRowSet;
 
 import com.etc.geeks.dao.GoodsInformation.GoodsDao;
 import com.etc.geeks.entity.GoodsInformation.Goods;
@@ -29,12 +33,66 @@ public class GoodsDaoImp implements GoodsDao {
 	}
 
 	public List<Goods> findAllGoods() {
-		// TODO Auto-generated method stub
+		String sql = "select * from Goods";
+		OracleCachedRowSet ocrs = DbOperation.executeQuery(sql, null);
+		List<Goods> list = new ArrayList<Goods>();
+		try {
+			while(ocrs.next()) {
+				Goods goods = new Goods(
+						ocrs.getString(1), ocrs.getString(2),
+						ocrs.getString(3), ocrs.getString(4),
+						ocrs.getString(5), ocrs.getString(6),
+						ocrs.getString(7), ocrs.getString(8),
+						ocrs.getString(9), ocrs.getString(10),
+						ocrs.getString(11), ocrs.getDouble(12),
+						ocrs.getDouble(13), ocrs.getDouble(14)
+						);
+				list.add(goods);
+			}
+			return list;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				ocrs.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		return null;
 	}
 
 	public Goods findById(String goodsId) {
-		// TODO Auto-generated method stub
+		String sql = "select * from Goods where goodsId = ?";
+		Object[] objects = new Object[]{goodsId};
+		OracleCachedRowSet ocrs = DbOperation.executeQuery(sql, objects);
+		Goods goods = null;
+		try {
+			if(ocrs.next()) {
+				goods = new Goods(
+						ocrs.getString(1), ocrs.getString(2),
+						ocrs.getString(3), ocrs.getString(4),
+						ocrs.getString(5), ocrs.getString(6),
+						ocrs.getString(7), ocrs.getString(8),
+						ocrs.getString(9), ocrs.getString(10),
+						ocrs.getString(11), ocrs.getDouble(12),
+						ocrs.getDouble(13), ocrs.getDouble(14)
+						);
+			}
+			return goods;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				ocrs.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		return null;
 	}
 

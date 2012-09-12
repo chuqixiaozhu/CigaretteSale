@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Calendar;
+
 import oracle.jdbc.rowset.OracleCachedRowSet;
 
 
@@ -17,8 +19,8 @@ public class DbOperation {
 	public static Connection getConnection(){
 		Connection connection = null;
 		String url = "jdbc:oracle:thin:@localhost:1521:orcl";
-		String username = "system";
-		String userpass = "admin";
+		String username = "geeks";
+		String userpass = "geeks";
 		
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -75,7 +77,13 @@ public class DbOperation {
 		try {
 			preparedStatement = connection.prepareStatement(sql);
 			for(int i = 0; i < objects.length; ++i){
-				preparedStatement.setObject(i + 1, objects[i]);
+				if(objects[i] instanceof Calendar) {
+					preparedStatement.setDate(i + 1,
+							new java.sql.Date(((java.util.Calendar)objects[i]).getTimeInMillis()));
+				} else {
+					preparedStatement.setObject(i + 1, objects[i]);
+					System.out.println(i + ": " + objects[i]);//test
+				}
 			}
 			result = preparedStatement.executeUpdate();
 			closeAll(null, preparedStatement, connection);
@@ -104,8 +112,15 @@ public class DbOperation {
 		}
 		try {
 			pstmt = conn.prepareStatement(sql);
-			for(int i = 0; i < objects.length; ++i) {
-				pstmt.setObject(i + 1, objects[i]);
+			if(objects != null) {
+				for(int i = 0; i < objects.length; ++i) {
+					if(objects[i] instanceof Calendar) {
+						pstmt.setDate(i + 1, 
+								new java.sql.Date(((java.util.Calendar)objects[i]).getTimeInMillis()));
+					} else {
+						pstmt.setObject(i + 1, objects[i]);
+					}
+				}
 			}
 			rs = pstmt.executeQuery();
 			OracleCachedRowSet ocrs = new OracleCachedRowSet();
