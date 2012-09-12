@@ -14,15 +14,16 @@ public class SalesGuestDaoImp implements SalesGuestDao {
 
 	public int addSalesGuset(SalesGuest salesGuest) {
 		// TODO Auto-generated method stub
-		String sql="insert into SalesGuest(salesGuestId,salesHostId,goodsId,priceType,price,number,amount) values(?,?,?,?,?,?,?)";
+		String sql="insert into SalesGuest(salesGuestId,salesHostId,goodsId,priceType,price,salesGuestNumber,amount,unit) values(?,?,?,?,?,?,?,?)";
 		Object []objects=new Object[]{
-				salesGuest.getSalesGuestId(),
-				salesGuest.getSalesHostId(),
-				salesGuest.getGoodsId(),
-				salesGuest.getPriceType(),
-				salesGuest.getPrice(),
-				salesGuest.getNumber(),
-				salesGuest.getAmount()	
+				 salesGuest.getSalesGuestId()
+				,salesGuest.getSalesHostId()
+				,salesGuest.getGoodsId()
+				,salesGuest.getPriceType()
+				,salesGuest.getPrice()
+				,salesGuest.getsalesGuestNumber()
+				,salesGuest.getAmount()
+				,salesGuest.getUnit()
 				};
 		return DbOperation.executeUpdate(sql, objects);
 	}
@@ -36,15 +37,16 @@ public class SalesGuestDaoImp implements SalesGuestDao {
 
 	public int updateSalesGuest(SalesGuest salesGuest) {
 		// TODO Auto-generated method stub
-		String sql="update SalesGuest set salesGuestId=?,salesHostId=?,goodsId=?,priceType=?,price=?,number=?,amount=?";
+		String sql="update SalesGuest set salesGuestId=?,salesHostId=?,goodsId=?,priceType=?,price=?,salesGuestNumber=?,amount=?,unit=?";
 		Object []objects=new Object[]{
 				salesGuest.getSalesGuestId(),
 				salesGuest.getSalesHostId(),
 				salesGuest.getGoodsId(),
 				salesGuest.getPriceType(),
 				salesGuest.getPrice(),
-				salesGuest.getNumber(),
-				salesGuest.getAmount()
+				salesGuest.getsalesGuestNumber(),
+				salesGuest.getAmount(),
+				salesGuest.getUnit()
 		};
 		return DbOperation.executeUpdate(sql, objects);
 	}
@@ -61,12 +63,14 @@ public class SalesGuestDaoImp implements SalesGuestDao {
 				return new SalesGuest(
 						ocrs.getString("salesHostId")
 						, ocrs.getString("salesGuestId")
-						, ocrs.getDouble("amount")
+						, ocrs.getString("unit")
 						, ocrs.getString("goodsId")
-						, ocrs.getDouble("number")
+						, ocrs.getDouble("salesGuestNumber")
 						, ocrs.getDouble("price")
 						, ocrs.getString("priceType")
+						, ocrs.getDouble("amount")
 						);
+				
 				
 			}
 			else
@@ -91,11 +95,12 @@ public class SalesGuestDaoImp implements SalesGuestDao {
 				sgList.add(new SalesGuest(
 						ocrs.getString("salesHostId")
 						, ocrs.getString("salesGuestId")
-						, ocrs.getDouble("amount")
+						, ocrs.getString("unit")
 						, ocrs.getString("goodsId")
-						, ocrs.getDouble("number")
+						, ocrs.getDouble("salesGuestNumber")
 						, ocrs.getDouble("price")
 						, ocrs.getString("priceType")
+						, ocrs.getDouble("amount")
 						));
 				
 			}
@@ -123,11 +128,12 @@ public class SalesGuestDaoImp implements SalesGuestDao {
 				sgList.add(new SalesGuest(
 						ocrs.getString("salesHostId")
 						, ocrs.getString("salesGuestId")
-						, ocrs.getDouble("amount")
+						, ocrs.getString("unit")
 						, ocrs.getString("goodsId")
-						, ocrs.getDouble("number")
+						, ocrs.getDouble("salesGuestNumber")
 						, ocrs.getDouble("price")
 						, ocrs.getString("priceType")
+						, ocrs.getDouble("amount")
 						));
 				
 			}
@@ -153,11 +159,12 @@ public class SalesGuestDaoImp implements SalesGuestDao {
 				sgList.add(new SalesGuest(
 						ocrs.getString("salesHostId")
 						, ocrs.getString("salesGuestId")
-						, ocrs.getDouble("amount")
+						, ocrs.getString("unit")
 						, ocrs.getString("goodsId")
-						, ocrs.getDouble("number")
+						, ocrs.getDouble("salesGuestNumber")
 						, ocrs.getDouble("price")
 						, ocrs.getString("priceType")
+						, ocrs.getDouble("amount")
 						));
 				
 			}

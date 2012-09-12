@@ -1,4 +1,4 @@
-package com.etc.geeks.dao.GoodsSale;
+ package com.etc.geeks.dao.GoodsSale;
 
 import java.util.List;
 

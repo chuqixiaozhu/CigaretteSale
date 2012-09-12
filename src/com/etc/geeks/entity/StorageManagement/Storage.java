@@ -1,8 +1,8 @@
 package com.etc.geeks.entity.StorageManagement;
 
 public class Storage {
-	private String goodsId;
-	private int number;
+	private String goodsId;//商品ID
+	private int number;//数量
 	public String getGoodsId() {
 		return goodsId;
 	}
@@ -23,6 +23,10 @@ public class Storage {
 		super();
 		this.goodsId = goodsId;
 		this.number = number;
+	}
+	public Storage() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	

@@ -1,14 +1,14 @@
 10
 
 dir
-204266
+204514
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/GoodsSale
 http://10.188.181.187/repos
 
 
 
-2012-09-12T07:00:53.174889Z
-204213
+2012-09-12T08:31:36.921157Z
+204435
 sx_java_120827_chenzhonglin
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2012-09-12T06:58:54.752637Z
-02530b07df01013147e1bad541b0d5f4
-2012-09-12T07:00:53.174889Z
-204213
+2012-09-12T08:05:47.252637Z
+085dc9b7f725ac565947d17a1d0fc58e
+2012-09-12T08:31:36.921157Z
+204435
 sx_java_120827_chenzhonglin
 
 
@@ -58,7 +58,7 @@ sx_java_120827_chenzhonglin
 
 
 
-1669
+1670
 
 SalesHostDao.java
 file

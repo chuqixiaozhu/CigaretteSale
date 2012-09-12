@@ -5,31 +5,30 @@ import java.util.Date;
 
 public class SalesHost {
 
-	Date date=null;
-	String saleHostId=null;
+	Date salesHostDate=null;
+	String salesHostId=null;
 	String userId=null;
 	public SalesHost() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public SalesHost(Date date, String saleHostId, String userId) {
+	public SalesHost(Date salesHostDate, String salesHostId, String userId) {
 		super();
-		this.date = date;
-		this.saleHostId = saleHostId;
+		this.salesHostDate = salesHostDate;
+		this.salesHostId = salesHostId;
 		this.userId = userId;
 	}
-
-	public Date getDate() {
-		return date;
+	public Date getSalesHostDate() {
+		return salesHostDate;
 	}
-	public void setDate(Date date) {
-		this.date = date;
+	public void setSalesHostDate(Date salesHostDate) {
+		this.salesHostDate = salesHostDate;
 	}
-	public String getSaleHostId() {
-		return saleHostId;
+	public String getSalesHostId() {
+		return salesHostId;
 	}
-	public void setSaleHostId(String saleHostId) {
-		this.saleHostId = saleHostId;
+	public void setSalesHostId(String salesHostId) {
+		this.salesHostId = salesHostId;
 	}
 	public String getUserId() {
 		return userId;
@@ -37,6 +36,12 @@ public class SalesHost {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	@Override
+	public String toString() {
+		return "SalesHost [salesHostDate=" + salesHostDate.toLocaleString() + ", salesHostId="
+				+ salesHostId + ", userId=" + userId + "]";
+	}
+
 	
 	
 	

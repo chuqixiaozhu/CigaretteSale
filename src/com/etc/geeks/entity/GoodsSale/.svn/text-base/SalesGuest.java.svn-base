@@ -5,25 +5,28 @@ import java.util.Date;
 public class SalesGuest {
 	String salesHostId=null;//销售信息主表ID
 	String salesGuestId=null;//销售信息从表ID
-	double amount=0.0;//销售金额
+	String unit=null;//计量单位
 	String goodsId=null;//商品ID
-	double number=0.0;//销售数量
+	double salesGuestNumber=0.0;//销售数量
 	double price=0.0;//销售价格
 	String priceType=null;//销售价格类型
+	double amount=0.0;//销售金额
 	public SalesGuest() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public SalesGuest(String salesHostId, String salesGuestId, double amount,
-			String goodsId, double number, double price, String priceType) {
+	public SalesGuest(String salesHostId, String salesGuestId, String unit,
+			String goodsId, double salesGuestNumber, double price,
+			String priceType, double amount) {
 		super();
 		this.salesHostId = salesHostId;
 		this.salesGuestId = salesGuestId;
-		this.amount = amount;
+		this.unit = unit;
 		this.goodsId = goodsId;
-		this.number = number;
+		this.salesGuestNumber = salesGuestNumber;
 		this.price = price;
 		this.priceType = priceType;
+		this.amount = amount;
 	}
 	public String getSalesHostId() {
 		return salesHostId;
@@ -37,11 +40,11 @@ public class SalesGuest {
 	public void setSalesGuestId(String salesGuestId) {
 		this.salesGuestId = salesGuestId;
 	}
-	public double getAmount() {
-		return amount;
+	public String getUnit() {
+		return unit;
 	}
-	public void setAmount(double amount) {
-		this.amount = amount;
+	public void setUnit(String unit) {
+		this.unit = unit;
 	}
 	public String getGoodsId() {
 		return goodsId;
@@ -49,11 +52,11 @@ public class SalesGuest {
 	public void setGoodsId(String goodsId) {
 		this.goodsId = goodsId;
 	}
-	public double getNumber() {
-		return number;
+	public double getsalesGuestNumber() {
+		return salesGuestNumber;
 	}
-	public void setNumber(double number) {
-		this.number = number;
+	public void setsalesGuestNumber(double salesGuestNumber) {
+		this.salesGuestNumber = salesGuestNumber;
 	}
 	public double getPrice() {
 		return price;
@@ -67,6 +70,21 @@ public class SalesGuest {
 	public void setPriceType(String priceType) {
 		this.priceType = priceType;
 	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+	@Override
+	public String toString() {
+		return "SalesGuest [amount=" + amount + ", goodsId=" + goodsId
+				+ ", price=" + price + ", priceType=" + priceType
+				+ ", salesGuestId=" + salesGuestId + ", salesGuestNumber="
+				+ salesGuestNumber + ", salesHostId=" + salesHostId + ", unit="
+				+ unit + "]";
+	}
+	
 	
 	
 	

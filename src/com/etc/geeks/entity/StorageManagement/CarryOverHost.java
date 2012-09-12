@@ -3,9 +3,9 @@ package com.etc.geeks.entity.StorageManagement;
 import java.util.Calendar;
 
 public class CarryOverHost {
-	private String userId;
-	private Calendar date;
-	private String carryOverHostId;
+	private String userId;//统计者ID
+	private Calendar date;//统计时间
+	private String carryOverHostId;//统计主表ID
 	public String getUserId() {
 		return userId;
 	}
@@ -35,6 +35,11 @@ public class CarryOverHost {
 		this.date = date;
 		this.carryOverHostId = carryOverHostId;
 	}
+	public CarryOverHost() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
 
 	
 }

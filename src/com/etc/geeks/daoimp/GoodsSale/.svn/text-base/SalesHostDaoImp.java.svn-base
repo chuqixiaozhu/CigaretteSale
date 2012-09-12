@@ -15,8 +15,8 @@ public class SalesHostDaoImp implements SalesHostDao {
 
 	public int addSalesHost(SalesHost salesHost) {
 		// TODO Auto-generated method stub
-		String sql="insert into SalesHost(salesHostId,date,userId) values(?,?,?)";
-		Object []objects=new Object[]{salesHost.getSaleHostId(),salesHost.getDate(),salesHost.getUserId()};
+		String sql="insert into SalesHost(salesHostId,salesHostdate,userId) values(?,?,?)";
+		Object []objects=new Object[]{salesHost.getSalesHostId(),salesHost.getSalesHostDate(),salesHost.getUserId()};
 		return DbOperation.executeUpdate(sql, objects);
 	}
 
@@ -30,8 +30,8 @@ public class SalesHostDaoImp implements SalesHostDao {
 
 	public int updateSalesHost(SalesHost salesHost) {
 		// TODO Auto-generated method stub
-		String sql="update SalesHost set salesHostId=? ,date=?, userId=?";
-		Object[]objects=new Object[]{salesHost.getSaleHostId(),salesHost.getDate(),salesHost.getUserId()};
+		String sql="update SalesHost set salesHostId=? ,salesHostdate=?, userId=?";
+		Object[]objects=new Object[]{salesHost.getSalesHostId(),salesHost.getSalesHostDate(),salesHost.getUserId()};
 		return DbOperation.executeUpdate(sql, objects);
 	}
 
@@ -44,8 +44,8 @@ public class SalesHostDaoImp implements SalesHostDao {
 			if(ocrs.next())
 			{
 				return new SalesHost(
-						new java.util.Date(ocrs.getTimestamp("date").getTime())
-						, ocrs.getString("saleHostId")
+						new java.util.Date(ocrs.getTimestamp("salesHostdate").getTime())
+						, ocrs.getString("salesHostId")
 						,ocrs.getString("userId")
 						);
 			}
@@ -70,8 +70,8 @@ public class SalesHostDaoImp implements SalesHostDao {
 			while(ocrs.next())
 			{
 				shList.add(new SalesHost(
-						new java.util.Date(ocrs.getTimestamp("date").getTime())
-						, ocrs.getString("saleHostId")
+						new java.util.Date(ocrs.getTimestamp("salesHostdate").getTime())
+						, ocrs.getString("salesHostId")
 						,ocrs.getString("userId")
 						));
 			}
@@ -95,7 +95,7 @@ public class SalesHostDaoImp implements SalesHostDao {
 		List<SalesHost> shList=new ArrayList<SalesHost>();
 		for(SalesHost sh:allSalesHost)
 		{
-			if(sh.getDate().after(startDate)&&sh.getDate().before(endDate))
+			if(sh.getSalesHostDate().after(startDate)&&sh.getSalesHostDate().before(endDate))
 			{
 				shList.add(sh);
 				
@@ -118,8 +118,8 @@ public class SalesHostDaoImp implements SalesHostDao {
 			while(ocrs.next())
 			{
 				shList.add(new SalesHost(
-						new java.util.Date(ocrs.getTimestamp("date").getTime())
-						, ocrs.getString("saleHostId")
+						new java.util.Date(ocrs.getTimestamp("salesHostdate").getTime())
+						, ocrs.getString("salesHostId")
 						,ocrs.getString("userId")
 						));
 			}

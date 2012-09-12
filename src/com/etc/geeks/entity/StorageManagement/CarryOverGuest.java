@@ -2,15 +2,18 @@ package com.etc.geeks.entity.StorageManagement;
 
 
 public class CarryOverGuest {
-	private String carryOverHostId;
-	private String carryOverGuestId;
-	private String goodsId;
+	private String carryOverHostId;//库存结转主表ID
+	private String carryOverGuestId;//库存结转从表ID
+	private String goodsId;//商品ID
+	private String unit;//计量单位
+	private int number;//数量
+	private double price;//单价
+	private double amount;//金额
 	
-	private String unit;
-	
-	private int number;
-	private int price;
-	private int amount;
+	public CarryOverGuest() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public String getCarryOverHostId() {
 		return carryOverHostId;
 	}
@@ -41,27 +44,20 @@ public class CarryOverGuest {
 	public void setNumber(int number) {
 		this.number = number;
 	}
-	public int getPrice() {
+	public double getPrice() {
 		return price;
 	}
-	public void setPrice(int price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
-	public int getAmount() {
+	public double getAmount() {
 		return amount;
 	}
-	public void setAmount(int amount) {
+	public void setAmount(double amount) {
 		this.amount = amount;
 	}
-	@Override
-	public String toString() {
-		return "CarryOverGuest [amount=" + amount + ", carryOverGuestId="
-				+ carryOverGuestId + ", carryOverHostId=" + carryOverHostId
-				+ ", goodsId=" + goodsId + ", number=" + number + ", price="
-				+ price + ", unit=" + unit + "]";
-	}
 	public CarryOverGuest(String carryOverHostId, String carryOverGuestId,
-			String goodsId, String unit, int number, int price, int amount) {
+			String goodsId, String unit, int number, double price, double amount) {
 		super();
 		this.carryOverHostId = carryOverHostId;
 		this.carryOverGuestId = carryOverGuestId;
@@ -71,6 +67,14 @@ public class CarryOverGuest {
 		this.price = price;
 		this.amount = amount;
 	}
+	@Override
+	public String toString() {
+		return "CarryOverGuest [amount=" + amount + ", carryOverGuestId="
+				+ carryOverGuestId + ", carryOverHostId=" + carryOverHostId
+				+ ", goodsId=" + goodsId + ", number=" + number + ", price="
+				+ price + ", unit=" + unit + "]";
+	}
+
 	
 	
 }

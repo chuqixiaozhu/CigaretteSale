@@ -1,14 +1,14 @@
 package com.etc.geeks.entity.StorageManagement;
 
 public class InStoreGuest {
-	private String inStoreGuestId;
-	private String inStoreHostId;
-	private String goodsId;
-	private String unit;
+	private String inStoreGuestId;//入库信息从表ID
+	private String inStoreHostId;//入库信息主表ID
+	private String goodsId;//商品ID
+	private String unit;//计量单位
 	
-	private int number;
-	private int price;
-	private int amount;
+	private int number;//数量
+	private double price;//单价
+	private double amount;//金额
 	public String getInStoreGuestId() {
 		return inStoreGuestId;
 	}
@@ -39,13 +39,13 @@ public class InStoreGuest {
 	public void setNumber(int number) {
 		this.number = number;
 	}
-	public int getPrice() {
+	public double getPrice() {
 		return price;
 	}
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	public int getAmount() {
+	public double getAmount() {
 		return amount;
 	}
 	public void setAmount(int amount) {
@@ -58,8 +58,12 @@ public class InStoreGuest {
 				+ inStoreHostId + ", number=" + number + ", price=" + price
 				+ ", unit=" + unit + "]";
 	}
+	public InStoreGuest() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	public InStoreGuest(String inStoreGuestId, String inStoreHostId,
-			String goodsId, String unit, int number, int price, int amount) {
+			String goodsId, String unit, int number, double price, double amount) {
 		super();
 		this.inStoreGuestId = inStoreGuestId;
 		this.inStoreHostId = inStoreHostId;
@@ -69,6 +73,7 @@ public class InStoreGuest {
 		this.price = price;
 		this.amount = amount;
 	}
+
 
 	
 }

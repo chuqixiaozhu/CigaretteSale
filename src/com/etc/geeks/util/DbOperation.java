@@ -6,7 +6,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.Timestamp;
 import java.util.Calendar;
+import java.util.Date;
 
 import oracle.jdbc.rowset.OracleCachedRowSet;
 
@@ -18,7 +20,7 @@ public class DbOperation {
 	 */
 	public static Connection getConnection(){
 		Connection connection = null;
-		String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+		String url = "jdbc:oracle:thin:@192.168.2.78:1521:orcl";
 		String username = "geeks";
 		String userpass = "geeks";
 		
@@ -77,12 +79,17 @@ public class DbOperation {
 		try {
 			preparedStatement = connection.prepareStatement(sql);
 			for(int i = 0; i < objects.length; ++i){
-				if(objects[i] instanceof Calendar) {
+				if(objects[i] instanceof Calendar) 
+				{
 					preparedStatement.setDate(i + 1,
 							new java.sql.Date(((java.util.Calendar)objects[i]).getTimeInMillis()));
-				} else {
+				}else if(objects[i] instanceof Date)
+				{
+					preparedStatement.setTimestamp(i + 1,
+							new Timestamp(((java.util.Date)objects[i]).getTime()));
+				}
+				else {
 					preparedStatement.setObject(i + 1, objects[i]);
-					System.out.println(i + ": " + objects[i]);//test
 				}
 			}
 			result = preparedStatement.executeUpdate();
@@ -114,10 +121,17 @@ public class DbOperation {
 			pstmt = conn.prepareStatement(sql);
 			if(objects != null) {
 				for(int i = 0; i < objects.length; ++i) {
-					if(objects[i] instanceof Calendar) {
+					if(objects[i] instanceof Calendar)
+					{
 						pstmt.setDate(i + 1, 
 								new java.sql.Date(((java.util.Calendar)objects[i]).getTimeInMillis()));
-					} else {
+					} 
+					else if(objects[i] instanceof Date)
+					{
+						pstmt.setTimestamp(i + 1,
+								new Timestamp(((java.util.Date)objects[i]).getTime()));
+					}
+					else {
 						pstmt.setObject(i + 1, objects[i]);
 					}
 				}

@@ -1,13 +1,13 @@
 package com.etc.geeks.entity.SystemManagement;
 
 public class User {
-	private String userId;
-	private String userName;
-	private String password;
-	private String gender;
-	private String authorityId;
-	private String userGroupId;
-	private String shiftId;
+	private String userId;//用户ID
+	private String userName;//用户名
+	private String password;//密码
+	private String gender;//性别
+	private String authorityId;//权限
+	private String userGroupId;//用户组ID
+	private String shiftId;//班次ID
 	public User(String userId, String userName, String password, String gender,
 			String authorityId, String userGroupId, String shiftId) {
 		super();

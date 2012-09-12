@@ -1,15 +1,15 @@
 10
 
 dir
-204266
+204514
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/util
 http://10.188.181.187/repos
 
 
 
-2012-09-12T07:25:06.941173Z
-204266
-sx_java_120827_pengzhen
+2012-09-12T09:11:51.055114Z
+204494
+sx_java_120827_chenzhonglin
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2012-09-12T06:09:17.533887Z
-85f091f408e7ca51347d2d57627ff168
-2012-09-12T06:37:09.639051Z
-204148
-sx_java_120827_pengzhen
+2012-09-12T08:56:44.190137Z
+7c4f2028856e0e00a9c94262cb2a491a
+2012-09-12T09:11:51.055114Z
+204494
+sx_java_120827_chenzhonglin
 
 
 
@@ -58,7 +58,7 @@ sx_java_120827_pengzhen
 
 
 
-3551
+3943
 
 TestForGoodsInformation.java
 file
@@ -66,10 +66,10 @@ file
 
 
 
-2012-09-12T06:56:15.674512Z
-88e7d4dbc2849cefd4b9124aea001944
-2012-09-12T07:25:06.941173Z
-204266
+2012-09-12T08:03:40.377637Z
+5e02304e7ea55c05d456372823d83376
+2012-09-12T08:30:53.712588Z
+204432
 sx_java_120827_pengzhen
 
 
@@ -92,5 +92,5 @@ sx_java_120827_pengzhen
 
 
 
-973
+1663
 

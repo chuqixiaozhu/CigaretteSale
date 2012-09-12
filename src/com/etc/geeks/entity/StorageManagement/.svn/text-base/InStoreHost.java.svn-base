@@ -3,13 +3,13 @@ package com.etc.geeks.entity.StorageManagement;
 import java.util.Calendar;
 
 public class InStoreHost {
-	private String checkerId;
-	private String checkFlag;
-	private String supplierId;
-	private String inStoreHostId;
+	private String checkerId;//审核人ID
+	private String checkFlag;//审核标志
+	private String supplierId;//供应商ID
+	private String inStoreHostId;//入库信息主表ID
 	
-	private Calendar inStoreDate;
-	private Calendar checkDate;
+	private Calendar inStoreDate;//入库日期
+	private Calendar checkDate;//审核日期
 	public String getCheckerId() {
 		return checkerId;
 	}
@@ -63,6 +63,11 @@ public class InStoreHost {
 		this.inStoreDate = inStoreDate;
 		this.checkDate = checkDate;
 	}
+	public InStoreHost() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
 
 	
 }

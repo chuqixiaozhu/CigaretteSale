@@ -1,15 +1,15 @@
 10
 
 dir
-204266
+204514
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/SystemManagement
 http://10.188.181.187/repos
 
 
 
-2012-09-12T01:43:01.432281Z
-203673
-sx_java_120827_pengzhen
+2012-09-12T08:53:37.296155Z
+204470
+sx_java_120827_mengfansheng
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2012-09-11T06:01:35.312500Z
-30e0050ee1cda19f576151652f887ca4
-2012-09-11T06:45:11.319519Z
-203149
-sx_java_120827_pengzhen
+2012-09-12T08:35:03.299512Z
+45494a93e8d84de323a68b22f7934e81
+2012-09-12T08:53:37.296155Z
+204470
+sx_java_120827_mengfansheng
 
 
 
@@ -58,7 +58,7 @@ sx_java_120827_pengzhen
 
 
 
-85
+1114
 
 ShiftDao.java
 file
@@ -66,11 +66,11 @@ file
 
 
 
-2012-09-11T06:01:35.234375Z
-05295e615642a0f7ae84e78d10887f05
-2012-09-11T06:45:11.319519Z
-203149
-sx_java_120827_pengzhen
+2012-09-12T08:35:03.299512Z
+f29b63837ad2acac7ae414f1b43c569a
+2012-09-12T08:53:37.296155Z
+204470
+sx_java_120827_mengfansheng
 
 
 
@@ -92,7 +92,7 @@ sx_java_120827_pengzhen
 
 
 
-81
+893
 
 UserDao.java
 file
@@ -134,11 +134,11 @@ file
 
 
 
-2012-09-11T06:01:35.156250Z
-83cddc9edb7c042bd32947a26f1f5cf9
-2012-09-11T06:45:11.319519Z
-203149
-sx_java_120827_pengzhen
+2012-09-12T08:35:03.315137Z
+fea62573189c41fa62a11858e46527a9
+2012-09-12T08:53:37.296155Z
+204470
+sx_java_120827_mengfansheng
 
 
 
@@ -160,5 +160,5 @@ sx_java_120827_pengzhen
 
 
 
-85
+1125
 

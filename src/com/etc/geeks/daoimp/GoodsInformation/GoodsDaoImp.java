@@ -13,15 +13,17 @@ import com.etc.geeks.util.DbOperation;
 public class GoodsDaoImp implements GoodsDao {
 
 	public int addGoods(Goods goods) {
-		int result = DbOperation.executeUpdate(
-				"insert into Users values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-				new Object[]{goods.getGoodsId(), goods.getGoodsName(),
-						goods.getSupplierId(), goods.getGoodsLargeClassId(),
-						goods.getGoodsSmallClassId(), goods.getGoodsCode(),
-						goods.getGoodsSize(), goods.getBarCode1(),
-						goods.getBarCode2(), goods.getBarCode3(),
-						goods.getUnit(), goods.getWholeSalePrice(),
-						goods.getRetailPrice(), goods.getMemberprice()});
+		String sql = "insert into Goods values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		Object[] objects = new Object[]{
+				goods.getGoodsId(), goods.getGoodsName(),
+				goods.getSupplierId(), goods.getGoodsLargeClassId(),
+				goods.getGoodsSmallClassId(), goods.getGoodsCode(),
+				goods.getGoodsSize(), goods.getBarCode1(),
+				goods.getBarCode2(), goods.getBarCode3(),
+				goods.getUnit(), goods.getWholeSalePrice(),
+				goods.getRetailPrice(), goods.getMemberprice()
+				};
+		int result = DbOperation.executeUpdate(sql, objects);
 		return result;
 		
 	}
@@ -97,13 +99,56 @@ public class GoodsDaoImp implements GoodsDao {
 	}
 
 	public Goods findByName(String goodsName) {
-		// TODO Auto-generated method stub
+		String sql = "select * from Goods where goodsName = ?";
+		Object[] objects = new Object[]{goodsName};
+		OracleCachedRowSet ocrs = DbOperation.executeQuery(sql, objects);
+		Goods goods = null;
+		try {
+			if(ocrs.next()) {
+				goods = new Goods(
+						ocrs.getString(1), ocrs.getString(2),
+						ocrs.getString(3), ocrs.getString(4),
+						ocrs.getString(5), ocrs.getString(6),
+						ocrs.getString(7), ocrs.getString(8),
+						ocrs.getString(9), ocrs.getString(10),
+						ocrs.getString(11), ocrs.getDouble(12),
+						ocrs.getDouble(13), ocrs.getDouble(14)
+						);
+			}
+			return goods;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				ocrs.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		return null;
 	}
 
 	public int updateGoods(Goods goods) {
-		// TODO Auto-generated method stub
-		return 0;
+		String sql = "update Goods set goodsName = ?, supplierId = ?," +
+				"goodsLargeClassId = ?, goodsSmallClassId = ?," +
+				"goodsCode = ?, goodsSize = ?," +
+				"barCode1 = ?, barCode2 = ?," +
+				"barCode3 = ?, unit = ?," +
+				"wholeSalePrice = ?, retailPrice = ?," +
+				"memberPrice = ? where goodsId = '" +
+				goods.getGoodsId() + "'";
+		Object[] objects = new Object[]{
+				goods.getGoodsName(), goods.getSupplierId(),
+				goods.getGoodsLargeClassId(), goods.getGoodsSmallClassId(), 
+				goods.getGoodsCode(), goods.getGoodsSize(),
+				goods.getBarCode1(), goods.getBarCode2(),
+				goods.getBarCode3(), goods.getUnit(),
+				goods.getWholeSalePrice(), goods.getRetailPrice(),
+				goods.getMemberprice()
+				};
+		int result = DbOperation.executeUpdate(sql, objects);
+		return result;
 	}
-
 }
