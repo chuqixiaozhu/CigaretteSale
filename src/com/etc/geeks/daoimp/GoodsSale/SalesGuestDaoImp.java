@@ -37,7 +37,7 @@ public class SalesGuestDaoImp implements SalesGuestDao {
 
 	public int updateSalesGuest(SalesGuest salesGuest) {
 		// TODO Auto-generated method stub
-		String sql="update SalesGuest set salesGuestId=?,salesHostId=?,goodsId=?,priceType=?,price=?,salesGuestNumber=?,amount=?,unit=?";
+		String sql="update SalesGuest set salesGuestId=?,salesHostId=?,goodsId=?,priceType=?,price=?,salesGuestNumber=?,amount=?,unit=? where salesGuestId=?";
 		Object []objects=new Object[]{
 				salesGuest.getSalesGuestId(),
 				salesGuest.getSalesHostId(),
@@ -46,7 +46,8 @@ public class SalesGuestDaoImp implements SalesGuestDao {
 				salesGuest.getPrice(),
 				salesGuest.getsalesGuestNumber(),
 				salesGuest.getAmount(),
-				salesGuest.getUnit()
+				salesGuest.getUnit(),
+				salesGuest.getSalesGuestId()
 		};
 		return DbOperation.executeUpdate(sql, objects);
 	}

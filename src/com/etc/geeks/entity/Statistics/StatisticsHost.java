@@ -7,8 +7,8 @@ public class StatisticsHost {
 	 * 属性
 	 */
 	private String  statisticHostId;					//统计主表ID
-	private Calendar	date;							//统计时间
-	private String  userId;								//统计着ID
+	private Calendar	cal;							//统计时间
+	private String  userId;								//统计者ID
 	
 	/**
 	 * get & set function
@@ -21,10 +21,10 @@ public class StatisticsHost {
 		this.statisticHostId = statisticHostId;
 	}
 	public Calendar getCalendar() {
-		return date;
+		return cal;
 	}
-	public void setDate(Calendar date) {
-		this.date = date;
+	public void setCalendar(Calendar cal) {
+		this.cal = cal;
 	}
 	public String getUserId() {
 		return userId;
@@ -39,10 +39,10 @@ public class StatisticsHost {
 	 * @param date
 	 * @param userId
 	 */
-	public StatisticsHost(String statisticHostId, Calendar date, String userId) {
+	public StatisticsHost(String statisticHostId, Calendar cal, String userId) {
 		super();
 		this.statisticHostId = statisticHostId;
-		this.date = date;
+		this.cal = cal;
 		this.userId = userId;
 	}
 	

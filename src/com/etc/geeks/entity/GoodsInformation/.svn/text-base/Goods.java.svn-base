@@ -1,22 +1,24 @@
 package com.etc.geeks.entity.GoodsInformation;
 
+import com.etc.geeks.util.SheetId;
+
 
 
 public class Goods {
-	private String goodsId;
-	private String goodsName;
-	private String supplierId;
-	private String goodsLargeClassId;
-	private String goodsSmallClassId;
-	private String goodsCode;
-	private String goodsSize;
-	private String barCode1;
-	private String barCode2;
-	private String barCode3;
-	private String unit;
-	private double wholeSalePrice;
-	private double retailPrice;
-	private double memberprice;
+	private String goodsId;//商品ID
+	private String goodsName;//商品名字
+	private String supplierId;//供应商ID
+	private String goodsLargeClassId;//商品大类ID
+	private String goodsSmallClassId;//商品小类ID
+	private String goodsCode;//商品代码
+	private String goodsSize;//规格型号
+	private String barCode1;//条形码1
+	private String barCode2;//条形码2
+	private String barCode3;//条形码3
+	private String unit;//计量单位
+	private double wholeSalePrice;//批发价
+	private double retailPrice;//会员价
+	private double memberprice;//零售价
 	
 	public Goods(String goodsId, String goodsName, String supplierId,
 			String goodsLargeClassId, String goodsSmallClassId, String goodsCode,
@@ -31,6 +33,27 @@ public class Goods {
 		this.goodsSmallClassId = goodsSmallClassId;
 		this.goodsCode = goodsCode;
 		this.goodsSize = size;
+		this.barCode1 = barCode1;
+		this.barCode2 = barCode2;
+		this.barCode3 = barCode3;
+		this.unit = unit;
+		this.wholeSalePrice = wholeSalePrice;
+		this.retailPrice = retailPrice;
+		this.memberprice = memberprice;
+	}
+	public Goods(String goodsName, String supplierId, String goodsLargeClassId,
+			String goodsSmallClassId, String goodsCode, String goodsSize,
+			String barCode1, String barCode2, String barCode3, String unit,
+			double wholeSalePrice, double retailPrice, double memberprice) {
+		super();
+		SheetId.setPrefix("GoodsInfo");
+		this.goodsId = SheetId.getSheetId();
+		this.goodsName = goodsName;
+		this.supplierId = supplierId;
+		this.goodsLargeClassId = goodsLargeClassId;
+		this.goodsSmallClassId = goodsSmallClassId;
+		this.goodsCode = goodsCode;
+		this.goodsSize = goodsSize;
 		this.barCode1 = barCode1;
 		this.barCode2 = barCode2;
 		this.barCode3 = barCode3;

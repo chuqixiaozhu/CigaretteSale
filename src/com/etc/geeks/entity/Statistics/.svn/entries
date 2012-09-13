@@ -1,15 +1,15 @@
 10
 
 dir
-204514
+204856
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/Statistics
 http://10.188.181.187/repos
 
 
 
-2012-09-12T06:49:28.088575Z
-204176
-sx_java_120827_majun
+2012-09-13T02:31:58.820813Z
+204813
+sx_java_120827_hongxinxin
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2012-09-12T06:58:54.596387Z
-f9d0b93e61c87b5246b13ccc8689ac7f
-2012-09-12T06:49:28.088575Z
-204176
-sx_java_120827_majun
+2012-09-13T02:32:06.234375Z
+13a16541cffb0e0e21160b1ad90d0b09
+2012-09-13T02:31:58.820813Z
+204813
+sx_java_120827_hongxinxin
 
 
 
@@ -58,7 +58,7 @@ sx_java_120827_majun
 
 
 
-5373
+5615
 
 StatisticsHost.java
 file
@@ -66,10 +66,10 @@ file
 
 
 
-2012-09-12T06:58:54.612012Z
-c27d7e6ccd73333bd4af887dac41a75a
-2012-09-12T06:13:22.346615Z
-204100
+2012-09-13T02:32:06.234375Z
+c8be270ffebae93865ded96b8a119d9e
+2012-09-13T02:15:28.698575Z
+204763
 sx_java_120827_majun
 
 
@@ -92,5 +92,5 @@ sx_java_120827_majun
 
 
 
-1186
+1182
 

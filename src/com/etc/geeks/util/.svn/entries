@@ -1,7 +1,7 @@
 10
 
 dir
-204514
+204856
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/util
 http://10.188.181.187/repos
 
@@ -25,6 +25,40 @@ sx_java_120827_chenzhonglin
 
 
 ef9f6835-dc2d-4211-bea4-54f3b24ac1c9
+
+SheetId.java
+file
+205051
+
+
+
+2012-09-13T05:26:25.828125Z
+ed012535dd31652d81552a460482d163
+2012-09-13T05:56:42.876456Z
+205051
+sx_java_120827_pengzhen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1015
 
 DbOperation.java
 file
@@ -62,14 +96,14 @@ sx_java_120827_chenzhonglin
 
 TestForGoodsInformation.java
 file
+205051
 
 
 
-
-2012-09-12T08:03:40.377637Z
-5e02304e7ea55c05d456372823d83376
-2012-09-12T08:30:53.712588Z
-204432
+2012-09-13T03:20:28.546875Z
+173b9f08814a8ee6a37eb1023e08bbea
+2012-09-13T05:56:42.876456Z
+205051
 sx_java_120827_pengzhen
 
 
@@ -92,5 +126,5 @@ sx_java_120827_pengzhen
 
 
 
-1663
+1916
 

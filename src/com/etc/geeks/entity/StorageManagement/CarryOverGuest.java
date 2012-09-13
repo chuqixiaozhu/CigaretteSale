@@ -6,13 +6,24 @@ public class CarryOverGuest {
 	private String carryOverGuestId;//库存结转从表ID
 	private String goodsId;//商品ID
 	private String unit;//计量单位
-	private int number;//数量
+	private double number;//数量
 	private double price;//单价
 	private double amount;//金额
-	
 	public CarryOverGuest() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+	public CarryOverGuest(String carryOverHostId, String carryOverGuestId,
+			String goodsId, String unit, double number, double price,
+			double amount) {
+		super();
+		this.carryOverHostId = carryOverHostId;
+		this.carryOverGuestId = carryOverGuestId;
+		this.goodsId = goodsId;
+		this.unit = unit;
+		this.number = number;
+		this.price = price;
+		this.amount = amount;
 	}
 	public String getCarryOverHostId() {
 		return carryOverHostId;
@@ -38,10 +49,10 @@ public class CarryOverGuest {
 	public void setUnit(String unit) {
 		this.unit = unit;
 	}
-	public int getNumber() {
+	public double getNumber() {
 		return number;
 	}
-	public void setNumber(int number) {
+	public void setNumber(double number) {
 		this.number = number;
 	}
 	public double getPrice() {
@@ -56,17 +67,6 @@ public class CarryOverGuest {
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
-	public CarryOverGuest(String carryOverHostId, String carryOverGuestId,
-			String goodsId, String unit, int number, double price, double amount) {
-		super();
-		this.carryOverHostId = carryOverHostId;
-		this.carryOverGuestId = carryOverGuestId;
-		this.goodsId = goodsId;
-		this.unit = unit;
-		this.number = number;
-		this.price = price;
-		this.amount = amount;
-	}
 	@Override
 	public String toString() {
 		return "CarryOverGuest [amount=" + amount + ", carryOverGuestId="
@@ -74,6 +74,8 @@ public class CarryOverGuest {
 				+ ", goodsId=" + goodsId + ", number=" + number + ", price="
 				+ price + ", unit=" + unit + "]";
 	}
+	
+
 
 	
 	

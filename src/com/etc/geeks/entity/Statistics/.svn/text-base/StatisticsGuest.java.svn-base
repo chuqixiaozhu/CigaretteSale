@@ -4,29 +4,29 @@ public class StatisticsGuest {
 	/**
 	 * 属性
 	 */
-	private String statisticsGuestId;
-	private String statisticsHostId;
-	private String goodsId;
+	private String statisticsGuestId;       //统计从表ID
+	private String statisticsHostId;        //统计主表ID
+	private String goodsId;                 //商品ID
 	
-	private int lastNumber;      			//上期数量
-	private int lastPrice;  				//上期单价
-	private int lastAmount; 				//上期金额
+	private double lastNumber;      			//上期数量
+	private double lastPrice;  				//上期单价
+	private double lastAmount; 				//上期金额
 	
-	private int nowInStoreNumber;			//本期入库数量
-	private int nowInStoreCost;			//本期入库单价
-	private int nowInStoreAmount;		//本期入库金额
+	private double nowInStoreNumber;			//本期入库数量
+	private double nowInStoreCost;			//本期入库单价
+	private double nowInStoreAmount;		//本期入库金额
 	
-	private int nowSalesNumber;				//本期销售数量
-	private int nowSalesPrice;				//本期销售单价
-	private int nowSalesAmount;				//本期销售金额
+	private double nowSalesNumber;				//本期销售数量
+	private double nowSalesPrice;				//本期销售单价
+	private double nowSalesAmount;				//本期销售金额
 	
-	private int SalesCost;	
+	private double SalesCost;	
 	
-	private int nowStorageNumber;			//本期库存数量
-	private int nowStoragePrice;			//本期库存价格
-	private int nowStorageAmount;			//本期库存金额
+	private double nowStorageNumber;			//本期库存数量
+	private double nowStoragePrice;			//本期库存价格
+	private double nowStorageAmount;			//本期库存金额
 	
-	private int profit;						//毛利
+	private double profit;						//毛利
 
 	/**
 	 * set & get function
@@ -55,115 +55,115 @@ public class StatisticsGuest {
 		this.goodsId = goodsId;
 	}
 
-	public int getLastNumber() {
+	public double getLastNumber() {
 		return lastNumber;
 	}
 
-	public void setLastNumber(int lastNumber) {
+	public void setLastNumber(double lastNumber) {
 		this.lastNumber = lastNumber;
 	}
 
-	public int getLastPrice() {
+	public double getLastPrice() {
 		return lastPrice;
 	}
 
-	public void setLastPrice(int lastPrice) {
+	public void setLastPrice(double lastPrice) {
 		this.lastPrice = lastPrice;
 	}
 
-	public int getLastAmount() {
+	public double getLastAmount() {
 		return lastAmount;
 	}
 
-	public void setLastAmount(int lastAmount) {
+	public void setLastAmount(double lastAmount) {
 		this.lastAmount = lastAmount;
 	}
 
-	public int getNowInStoreNumber() {
+	public double getNowInStoreNumber() {
 		return nowInStoreNumber;
 	}
 
-	public void setNowInStoreNumber(int nowInStoreNumber) {
+	public void setNowInStoreNumber(double nowInStoreNumber) {
 		this.nowInStoreNumber = nowInStoreNumber;
 	}
 
-	public int getNowInStoreCost() {
+	public double getNowInStoreCost() {
 		return nowInStoreCost;
 	}
 
-	public void setNowInStoreCost(int nowInStoreCost) {
+	public void setNowInStoreCost(double nowInStoreCost) {
 		this.nowInStoreCost = nowInStoreCost;
 	}
 
-	public int getNowInStoreAmount() {
+	public double getNowInStoreAmount() {
 		return nowInStoreAmount;
 	}
 
-	public void setNowInStoreAmount(int nowInStoreAmount) {
+	public void setNowInStoreAmount(double nowInStoreAmount) {
 		this.nowInStoreAmount = nowInStoreAmount;
 	}
 
-	public int getNowSalesNumber() {
+	public double getNowSalesNumber() {
 		return nowSalesNumber;
 	}
 
-	public void setNowSalesNumber(int nowSalesNumber) {
+	public void setNowSalesNumber(double nowSalesNumber) {
 		this.nowSalesNumber = nowSalesNumber;
 	}
 
-	public int getNowSalesPrice() {
+	public double getNowSalesPrice() {
 		return nowSalesPrice;
 	}
 
-	public void setNowSalesPrice(int nowSalesPrice) {
+	public void setNowSalesPrice(double nowSalesPrice) {
 		this.nowSalesPrice = nowSalesPrice;
 	}
 
-	public int getNowSalesAmount() {
+	public double getNowSalesAmount() {
 		return nowSalesAmount;
 	}
 
-	public void setNowSalesAmount(int nowSalesAmount) {
+	public void setNowSalesAmount(double nowSalesAmount) {
 		this.nowSalesAmount = nowSalesAmount;
 	}
 
-	public int getSalesCost() {
+	public double getSalesCost() {
 		return SalesCost;
 	}
 
-	public void setSalesCost(int salesCost) {
+	public void setSalesCost(double salesCost) {
 		SalesCost = salesCost;
 	}
 
-	public int getNowStorageNumber() {
+	public double getNowStorageNumber() {
 		return nowStorageNumber;
 	}
 
-	public void setNowStorageNumber(int nowStorageNumber) {
+	public void setNowStorageNumber(double nowStorageNumber) {
 		this.nowStorageNumber = nowStorageNumber;
 	}
 
-	public int getNowStoragePrice() {
+	public double getNowStoragePrice() {
 		return nowStoragePrice;
 	}
 
-	public void setNowStoragePrice(int nowStoragePrice) {
+	public void setNowStoragePrice(double nowStoragePrice) {
 		this.nowStoragePrice = nowStoragePrice;
 	}
 
-	public int getNowStorageAmount() {
+	public double getNowStorageAmount() {
 		return nowStorageAmount;
 	}
 
-	public void setNowStorageAmount(int nowStorageAmount) {
+	public void setNowStorageAmount(double nowStorageAmount) {
 		this.nowStorageAmount = nowStorageAmount;
 	}
 
-	public int getProfit() {
+	public double getProfit() {
 		return profit;
 	}
 
-	public void setProfit(int profit) {
+	public void setProfit(double profit) {
 		this.profit = profit;
 	}
 
@@ -188,11 +188,11 @@ public class StatisticsGuest {
 	 * @param profit
 	 */
 	public StatisticsGuest(String statisticsGuestId, String statisticsHostId,
-		String goodsId, int lastNumber, int lastPrice, int lastAmount,
-		int nowInStoreNumber, int currentInStoreCost,
-		int currentInStoreAmount, int nowSalesNumber, int nowSalesPrice,
-		int nowSalesAmount, int salesCost, int nowStorageNumber,
-		int nowStoragePrice, int nowStorageAmount, int profit) {
+		String goodsId, double lastNumber, double lastPrice, double lastAmount,
+		double nowInStoreNumber, double currentInStoreCost,
+		double currentInStoreAmount, double nowSalesNumber, double nowSalesPrice,
+		double nowSalesAmount, double salesCost, double nowStorageNumber,
+		double nowStoragePrice, double nowStorageAmount, double profit) {
 		
 		super();
 		

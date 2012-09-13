@@ -1,14 +1,14 @@
 10
 
 dir
-204514
+204856
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/GoodsSale
 http://10.188.181.187/repos
 
 
 
-2012-09-12T08:05:17.267941Z
-204382
+2012-09-13T02:00:42.599415Z
+204729
 sx_java_120827_chenzhonglin
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2012-09-12T08:17:49.362012Z
-f25d382c5b9614330675757a9c674325
-2012-09-12T08:05:17.267941Z
-204382
+2012-09-13T02:32:05.671875Z
+637b63fa7c469af7711ee4898d9d7158
+2012-09-13T02:00:42.599415Z
+204729
 sx_java_120827_chenzhonglin
 
 
@@ -58,7 +58,7 @@ sx_java_120827_chenzhonglin
 
 
 
-3910
+4214
 
 SalesGuestDaoImp.java
 file
@@ -66,10 +66,10 @@ file
 
 
 
-2012-09-12T08:17:49.377637Z
-f2ae69f9a231c87f6d04d89170018331
-2012-09-12T08:05:17.267941Z
-204382
+2012-09-13T00:59:56.625000Z
+51c0c062853113e0fe1d984d43cfa077
+2012-09-12T09:58:51.472316Z
+204600
 sx_java_120827_chenzhonglin
 
 
@@ -92,5 +92,5 @@ sx_java_120827_chenzhonglin
 
 
 
-5297
+5353
 
