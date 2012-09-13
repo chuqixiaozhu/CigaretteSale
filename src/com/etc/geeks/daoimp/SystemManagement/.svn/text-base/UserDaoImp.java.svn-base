@@ -57,9 +57,9 @@ public class UserDaoImp implements UserDao {
 		return null;
 	}
 
-	public User findById(String userId) {
+	public User findByAuthorityId(String authorityId) {
 		Connection conn = DbOperation.getConnection();
-		String sql = "select * from User where userId = ?";
+		String sql = "select * from User where authorityId = ?";
 		User user = null;
 		
 		if(conn == null) {
@@ -68,7 +68,34 @@ public class UserDaoImp implements UserDao {
 		}
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, userId);
+			pstmt.setString(1, authorityId);
+			ResultSet rs = pstmt.executeQuery();
+			if(rs.next()) {
+				user = new User(rs.getString(1), rs.getString(2),
+						rs.getString(3), rs.getString(4),
+						rs.getString(5), rs.getString(6),
+						rs.getString(7));
+			}
+			DbOperation.closeAll(rs, pstmt, conn);
+			return user;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+	public User findByUserGroupId(String userGroupId) {
+		Connection conn = DbOperation.getConnection();
+		String sql = "select * from User where userGroupId = ?";
+		User user = null;
+		
+		if(conn == null) {
+			System.out.println("Error: connection is null.");
+			return null;
+		}
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, userGroupId);
 			ResultSet rs = pstmt.executeQuery();
 			if(rs.next()) {
 				user = new User(rs.getString(1), rs.getString(2),
@@ -122,6 +149,34 @@ public class UserDaoImp implements UserDao {
 					user.getGender(), user.getAuthorityId(),
 					user.getUserGroupId(), user.getShiftId()});
 		return result;
+	}
+
+	public User findById(String userId) {
+		Connection conn = DbOperation.getConnection();
+		String sql = "select * from User where userId = ?";
+		User user = null;
+		
+		if(conn == null) {
+			System.out.println("Error: connection is null.");
+			return null;
+		}
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, userId);
+			ResultSet rs = pstmt.executeQuery();
+			if(rs.next()) {
+				user = new User(rs.getString(1), rs.getString(2),
+						rs.getString(3), rs.getString(4),
+						rs.getString(5), rs.getString(6),
+						rs.getString(7));
+			}
+			DbOperation.closeAll(rs, pstmt, conn);
+			return user;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	/*

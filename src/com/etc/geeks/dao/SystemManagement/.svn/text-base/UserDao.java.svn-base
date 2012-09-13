@@ -42,6 +42,18 @@ public interface UserDao {
 	 */
 	public abstract User findById(String userId);
 	/**
+	 * 返回由用户组ID找到的对象
+	 * @param userGroupId
+	 * @return
+	 */
+	public abstract User findByUserGroupId(String userGroupId);
+	/**
+	 * 返回由权限ID找到的对象
+	 * @param authorityId
+	 * @return
+	 */
+	public abstract User findByAuthorityId(String authorityId);
+	/**
 	 * 返回所有对象
 	 * @return
 	 */

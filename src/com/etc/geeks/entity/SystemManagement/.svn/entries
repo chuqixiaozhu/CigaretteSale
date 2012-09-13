@@ -1,14 +1,14 @@
 10
 
 dir
-205107
+205326
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/SystemManagement
 http://10.188.181.187/repos
 
 
 
-2012-09-13T06:43:50.204111Z
-205099
+2012-09-13T09:20:41.019993Z
+205300
 sx_java_120827_mengfansheng
 
 
@@ -25,6 +25,40 @@ sx_java_120827_mengfansheng
 
 
 ef9f6835-dc2d-4211-bea4-54f3b24ac1c9
+
+ShiftGuest.java
+file
+
+
+
+
+2012-09-13T09:14:11.078125Z
+49a8a75a86556b646232d6a02ec1a15a
+2012-09-13T09:20:41.019993Z
+205300
+sx_java_120827_mengfansheng
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1088
 
 Authority.java
 file
@@ -94,16 +128,16 @@ sx_java_120827_mengfansheng
 
 1165
 
-Shift.java
+ShiftHost.java
 file
 
 
 
 
-2012-09-12T08:05:47.877637Z
-0b504037588df25d81a6d7cfb5ffec29
-2012-09-12T08:25:08.804102Z
-204425
+2012-09-13T09:14:11.078125Z
+5acfb9a810f183bce5be79b40793a499
+2012-09-13T09:20:41.019993Z
+205300
 sx_java_120827_mengfansheng
 
 
@@ -126,7 +160,7 @@ sx_java_120827_mengfansheng
 
 
 
-992
+1052
 
 User.java
 file

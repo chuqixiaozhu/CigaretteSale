@@ -115,4 +115,29 @@ public class UserGroupDaoImp implements UserGroupDao {
 		return result;
 	}
 
+	public UserGroup findByAuthorityId(String authorityId) {
+		Connection conn = DbOperation.getConnection();
+		String sql = "select * from UserGroup where authorityId = ?";
+		UserGroup userGroup = null;
+		
+		if(conn == null) {
+			System.out.println("Error: connection is null.");
+			return null;
+		}
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, authorityId);
+			ResultSet rs = pstmt.executeQuery();
+			if(rs.next()) {
+				userGroup = new UserGroup(rs.getString(1), rs.getString(2),rs.getString(3));
+			}
+			DbOperation.closeAll(rs, pstmt, conn);
+			return userGroup;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+
 }

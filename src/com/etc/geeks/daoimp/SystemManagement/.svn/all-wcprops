@@ -1,23 +1,29 @@
 K 25
 svn:wc:ra_dav:version-url
 V 164
-/repos/!svn/ver/205099/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/SystemManagement
+/repos/!svn/ver/205300/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/SystemManagement
 END
-AuthorityDaoImp.java
+shiftGuestDaoImp.java
 K 25
 svn:wc:ra_dav:version-url
-V 185
-/repos/!svn/ver/205099/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/SystemManagement/AuthorityDaoImp.java
+V 186
+/repos/!svn/ver/205300/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/SystemManagement/shiftGuestDaoImp.java
 END
 UserGroupDaoImp.java
 K 25
 svn:wc:ra_dav:version-url
 V 185
-/repos/!svn/ver/205099/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/SystemManagement/UserGroupDaoImp.java
+/repos/!svn/ver/205164/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/SystemManagement/UserGroupDaoImp.java
 END
-ShiftDaoImp.java
+ShiftHostDaoImp.java
 K 25
 svn:wc:ra_dav:version-url
-V 181
-/repos/!svn/ver/205099/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/SystemManagement/ShiftDaoImp.java
+V 185
+/repos/!svn/ver/205300/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/SystemManagement/ShiftHostDaoImp.java
+END
+UserDaoImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/repos/!svn/ver/205164/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/SystemManagement/UserDaoImp.java
 END
