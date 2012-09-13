@@ -45,5 +45,5 @@ public interface AuthorityDao {
 	 * 返回所有对象
 	 * @return
 	 */
-	public abstract List<Authority> findAllUsers();
+	public abstract List<Authority> findAll();
 }

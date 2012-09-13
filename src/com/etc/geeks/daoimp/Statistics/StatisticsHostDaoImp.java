@@ -11,21 +11,23 @@ import com.etc.geeks.dao.Statistics.StatisticsHostDao;
 import com.etc.geeks.entity.Statistics.StatisticsGuest;
 import com.etc.geeks.entity.Statistics.StatisticsHost;
 import com.etc.geeks.util.DbOperation;
+import com.sun.org.apache.bcel.internal.generic.NEW;
 
 public class StatisticsHostDaoImp implements StatisticsHostDao {
 
+	Calendar calendar = Calendar.getInstance();
 	public int addStatisticsHost(StatisticsHost sh) {
 		// TODO Auto-generated method stub
 		int result = DbOperation.executeUpdate(
-				"insert into StatisticHost values(?, ?, ?)",
-				new Object[]{sh.getStatisticHostId(),sh.getCalendar(),sh.getUserId()});
+				"insert into StatisticsHost values(?, ?, ?)",
+				new Object[]{sh.getStatisticsHostId(),sh.getDate(),sh.getUserId()});
 		return result;
 	}
 
-	public int deleteById(String statisticHostId) {
+	public int deleteById(String statisticsHostId) {
 		// TODO Auto-generated method stub
 		int result = DbOperation.executeUpdate(
-				"delete from StatisticHost where statisticHostId = ?", new Object[] { statisticHostId });
+				"delete from StatisticsHost where statisticsHostId = ?", new Object[] { statisticsHostId });
 		return result;
 	}
 
@@ -37,7 +39,9 @@ public class StatisticsHostDaoImp implements StatisticsHostDao {
 		try {
 			while(ocrs.next()) {
 				StatisticsHost sh = new StatisticsHost(
-						ocrs.getString(1),(Calendar)ocrs.getObject(2),ocrs.getString(3)
+						ocrs.getString(1),
+						ocrs.getDate(2),
+						ocrs.getString(3)
 						);
 				list.add(sh);
 			}
@@ -63,8 +67,9 @@ public class StatisticsHostDaoImp implements StatisticsHostDao {
 		StatisticsHost result = null;
 		try {
 			if(ocrs.next()){
-				StatisticsHost sh = new StatisticsHost(ocrs.getString(1),(Calendar)ocrs.getObject(2),ocrs.getString(3));
+				StatisticsHost sh = new StatisticsHost(ocrs.getString(1),ocrs.getDate(2),ocrs.getString(3));
 				result = sh;
+				return result;
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -76,7 +81,7 @@ public class StatisticsHostDaoImp implements StatisticsHostDao {
 	public int updateStatisticHost(StatisticsHost sh) {
 		// TODO Auto-generated method stub
 		int result = DbOperation.executeUpdate(
-				"update StatisticsHost set cal = ? userId = ? where statisticsHostId = '"+sh.getStatisticHostId()+"'",new Object[]{sh.getCalendar(),sh.getUserId()});
+				"update StatisticsHost set statisticsDate = ? userId = ? where statisticsHostId = '"+sh.getStatisticsHostId()+"'",new Object[]{sh.getDate(),sh.getUserId()});
 		return result;
 	}
 

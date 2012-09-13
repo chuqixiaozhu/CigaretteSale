@@ -1,7 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 165
-/repos/!svn/ver/204811/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/StorageManagement
+/repos/!svn/ver/204971/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/StorageManagement
+END
+InStoreHost.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/repos/!svn/ver/204971/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/StorageManagement/InStoreHost.java
 END
 CarryOverGuest.java
 K 25
@@ -14,6 +20,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 178
 /repos/!svn/ver/204811/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/StorageManagement/Storage.java
+END
+CarryOverHost.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/repos/!svn/ver/204970/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/StorageManagement/CarryOverHost.java
 END
 InStoreGuest.java
 K 25

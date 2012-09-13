@@ -1,6 +1,7 @@
 package com.etc.geeks.entity.StorageManagement;
 
-import java.util.Calendar;
+
+import java.util.Date;
 
 public class InStoreHost {
 	private String checkerId;//审核人ID
@@ -8,8 +9,8 @@ public class InStoreHost {
 	private String supplierId;//供应商ID
 	private String inStoreHostId;//入库信息主表ID
 	
-	private Calendar inStoreDate;//入库日期
-	private Calendar checkDate;//审核日期
+	private Date inStoreDate;//入库日期
+	private Date checkDate;//审核日期
 	public String getCheckerId() {
 		return checkerId;
 	}
@@ -34,16 +35,16 @@ public class InStoreHost {
 	public void setInStoreHostId(String inStoreHostId) {
 		this.inStoreHostId = inStoreHostId;
 	}
-	public Calendar getInStoreDate() {
+	public Date getInStoreDate() {
 		return inStoreDate;
 	}
-	public void setInStoreDate(Calendar inStoreDate) {
+	public void setInStoreDate(Date inStoreDate) {
 		this.inStoreDate = inStoreDate;
 	}
-	public Calendar getCheckDate() {
+	public Date getCheckDate() {
 		return checkDate;
 	}
-	public void setCheckDate(Calendar checkDate) {
+	public void setCheckDate(Date checkDate) {
 		this.checkDate = checkDate;
 	}
 	@Override
@@ -54,7 +55,7 @@ public class InStoreHost {
 				+ ", supplierId=" + supplierId + "]";
 	}
 	public InStoreHost(String checkerId, String checkFlag, String supplierId,
-			String inStoreHostId, Calendar inStoreDate, Calendar checkDate) {
+			String inStoreHostId, Date inStoreDate, Date checkDate) {
 		super();
 		this.checkerId = checkerId;
 		this.checkFlag = checkFlag;

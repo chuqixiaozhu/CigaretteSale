@@ -1,19 +1,20 @@
 package com.etc.geeks.entity.GoodsInformation;
 
-import java.util.Calendar;
+
+import java.util.Date;
 
 
 public class ChangePriceHost {
 	private String changePriceHostId;//	调价信息主表ID
-	private Calendar validDate;//	生效日期(通过审核的日期)
-	private Calendar startDate;//	调价开始日期
-	private Calendar endDate;//	调价结束日期
+	private Date validDate;//	生效日期(通过审核的日期)
+	private Date startDate;//	调价开始日期
+	private Date endDate;//	调价结束日期
 	public ChangePriceHost() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public ChangePriceHost(String changePriceHostId, Calendar validDate,
-			Calendar startDate, Calendar endDate) {
+	public ChangePriceHost(String changePriceHostId, Date validDate,
+			Date startDate, Date endDate) {
 		super();
 		this.changePriceHostId = changePriceHostId;
 		this.validDate = validDate;
@@ -26,22 +27,22 @@ public class ChangePriceHost {
 	public void setChangePriceHostId(String changePriceHostId) {
 		this.changePriceHostId = changePriceHostId;
 	}
-	public Calendar getValidDate() {
+	public Date getValidDate() {
 		return validDate;
 	}
-	public void setValidDate(Calendar validDate) {
+	public void setValidDate(Date validDate) {
 		this.validDate = validDate;
 	}
-	public Calendar getStartDate() {
+	public Date getStartDate() {
 		return startDate;
 	}
-	public void setStartDate(Calendar startDate) {
+	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
-	public Calendar getEndDate() {
+	public Date getEndDate() {
 		return endDate;
 	}
-	public void setEndDate(Calendar endDate) {
+	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
 	@Override

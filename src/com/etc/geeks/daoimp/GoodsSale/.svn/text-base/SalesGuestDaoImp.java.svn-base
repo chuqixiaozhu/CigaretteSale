@@ -11,7 +11,7 @@ import com.etc.geeks.entity.GoodsSale.SalesGuest;
 import com.etc.geeks.util.DbOperation;
 
 public class SalesGuestDaoImp implements SalesGuestDao {
-
+ 
 	public int addSalesGuset(SalesGuest salesGuest) {
 		// TODO Auto-generated method stub
 		String sql="insert into SalesGuest(salesGuestId,salesHostId,goodsId,priceType,price,salesGuestNumber,amount,unit) values(?,?,?,?,?,?,?,?)";

@@ -1,14 +1,14 @@
 10
 
 dir
-204856
+205107
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/GoodsInformation
 http://10.188.181.187/repos
 
 
 
-2012-09-12T08:30:53.712588Z
-204432
+2012-09-13T06:51:31.889842Z
+205106
 sx_java_120827_pengzhen
 
 
@@ -28,14 +28,14 @@ ef9f6835-dc2d-4211-bea4-54f3b24ac1c9
 
 ChangePriceHostDaoImp.java
 file
+205271
 
 
 
-
-2012-09-11T06:21:27.328125Z
-61578cb757e48081072bfb440ab098ee
-2012-09-11T06:53:25.466066Z
-203166
+2012-09-13T08:25:48.906250Z
+b36c68f17a20429f9ff89eb7f11918e6
+2012-09-13T09:08:41.353009Z
+205271
 sx_java_120827_pengzhen
 
 
@@ -58,7 +58,7 @@ sx_java_120827_pengzhen
 
 
 
-188
+3404
 
 GoodsSmallClassDaoImp.java
 file
@@ -100,10 +100,10 @@ file
 
 
 
-2012-09-12T07:59:55.033887Z
-317f9b1d386d9794491bd299bcf1be84
-2012-09-12T08:30:53.712588Z
-204432
+2012-09-13T06:05:16.359375Z
+39bc37d482d8991477008f33e894fbcf
+2012-09-13T06:51:31.889842Z
+205106
 sx_java_120827_pengzhen
 
 
@@ -126,7 +126,7 @@ sx_java_120827_pengzhen
 
 
 
-4757
+4821
 
 GoodsLargeClassDaoImp.java
 file

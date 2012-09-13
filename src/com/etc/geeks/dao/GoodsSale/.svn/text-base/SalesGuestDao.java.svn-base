@@ -6,7 +6,7 @@ import com.etc.geeks.entity.GoodsSale.SalesGuest;
 
 
 public interface SalesGuestDao {
-
+ 
 	/**
 	 * 向销售信息从表内添加一条记录
 	 * @param salesGuest

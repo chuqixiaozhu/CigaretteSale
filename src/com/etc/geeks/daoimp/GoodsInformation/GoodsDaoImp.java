@@ -51,7 +51,11 @@ public class GoodsDaoImp implements GoodsDao {
 						);
 				list.add(goods);
 			}
-			return list;
+			if(!list.isEmpty()) {
+				return list;
+			} else {
+				return null;
+			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

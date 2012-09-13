@@ -1,6 +1,7 @@
 package com.etc.geeks.entity.Statistics;
 
 public class StatisticsGuest {
+
 	/**
 	 * 属性
 	 */
@@ -214,7 +215,22 @@ public class StatisticsGuest {
 		this.nowStorageAmount = nowStorageAmount;
 		this.profit = profit;
 	}
-	
+	@Override
+	public String toString() {
+		return "StatisticsGuest [SalesCost=" + SalesCost + ", goodsId="
+				+ goodsId + ", lastAmount=" + lastAmount + ", lastNumber="
+				+ lastNumber + ", lastPrice=" + lastPrice
+				+ ", nowInStoreAmount=" + nowInStoreAmount
+				+ ", nowInStoreCost=" + nowInStoreCost + ", nowInStoreNumber="
+				+ nowInStoreNumber + ", nowSalesAmount=" + nowSalesAmount
+				+ ", nowSalesNumber=" + nowSalesNumber + ", nowSalesPrice="
+				+ nowSalesPrice + ", nowStorageAmount=" + nowStorageAmount
+				+ ", nowStorageNumber=" + nowStorageNumber
+				+ ", nowStoragePrice=" + nowStoragePrice + ", profit=" + profit
+				+ ", statisticsGuSstId=" + statisticsGuestId
+				+ ", statisticsHostId=" + statisticsHostId + "]";
+	}
+
 	/**
 	 * generator using super
 	 */

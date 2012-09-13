@@ -2,14 +2,14 @@ package com.etc.geeks.entity.SystemManagement;
 
 public class UserGroup {
 
-	private String suserGroupId;//用户组ID
+	private String userGroupId;//用户组ID
 	private String authorityId;//权限ID
 	private String userGroupName;//用户组名称
 	public String getSuserGroupId() {
-		return suserGroupId;
+		return userGroupId;
 	}
 	public void setSuserGroupId(String suserGroupId) {
-		this.suserGroupId = suserGroupId;
+		this.userGroupId = suserGroupId;
 	}
 	public String getAuthorityId() {
 		return authorityId;
@@ -26,12 +26,12 @@ public class UserGroup {
 	@Override
 	public String toString() {
 		return "UserGroup [authorityId=" + authorityId + ", suserGroupId="
-				+ suserGroupId + ", userGroupName=" + userGroupName + "]";
+				+ userGroupId + ", userGroupName=" + userGroupName + "]";
 	}
 	public UserGroup(String suserGroupId, String authorityId,
 			String userGroupName) {
 		super();
-		this.suserGroupId = suserGroupId;
+		this.userGroupId = suserGroupId;
 		this.authorityId = authorityId;
 		this.userGroupName = userGroupName;
 	}

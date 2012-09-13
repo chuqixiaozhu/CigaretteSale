@@ -22,7 +22,7 @@ public class SalesHostDaoImp implements SalesHostDao {
 		Object []objects=new Object[]{salesHost.getSalesHostId(),salesHost.getSalesHostDate(),salesHost.getUserId()};
 		return DbOperation.executeUpdate(sql, objects);
 	}
-
+ 
 	public int deleteBySalesHostId(String salesHostId) {
 		// TODO Auto-generated method stub
 		String sql="delete from SalesHost where salesHostId=?";

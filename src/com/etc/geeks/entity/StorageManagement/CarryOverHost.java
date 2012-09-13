@@ -1,10 +1,11 @@
 package com.etc.geeks.entity.StorageManagement;
 
-import java.util.Calendar;
+
+import java.util.Date;
 
 public class CarryOverHost {
 	private String userId;//统计者ID
-	private Calendar date;//统计时间
+	private Date date;//统计时间
 	private String carryOverHostId;//统计主表ID
 	public String getUserId() {
 		return userId;
@@ -12,10 +13,10 @@ public class CarryOverHost {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public Calendar getDate() {
+	public Date getDate() {
 		return date;
 	}
-	public void setDate(Calendar date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
 	public String getCarryOverHostId() {
@@ -29,7 +30,7 @@ public class CarryOverHost {
 		return "CarryOverHost [carryOverHostId=" + carryOverHostId + ", date="
 				+ date + ", userId=" + userId + "]";
 	}
-	public CarryOverHost(String userId, Calendar date, String carryOverHostId) {
+	public CarryOverHost(String userId, Date date, String carryOverHostId) {
 		super();
 		this.userId = userId;
 		this.date = date;

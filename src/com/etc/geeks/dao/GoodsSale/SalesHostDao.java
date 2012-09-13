@@ -8,7 +8,7 @@ import com.etc.geeks.entity.GoodsSale.SalesGuest;
 import com.etc.geeks.entity.GoodsSale.SalesHost;
 
 public interface SalesHostDao {
-	
+	 
 	/**
 	 * 向销售信息主表内添加记录
 	 * @param salesHost 

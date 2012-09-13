@@ -1,14 +1,14 @@
 10
 
 dir
-204856
+205107
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/daoimp/SystemManagement
 http://10.188.181.187/repos
 
 
 
-2012-09-12T08:55:04.647824Z
-204471
+2012-09-13T06:43:50.204111Z
+205099
 sx_java_120827_mengfansheng
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2012-09-12T08:35:03.424512Z
-8451712b7be79d02c64660b0a304c3ff
-2012-09-12T08:55:04.647824Z
-204471
+2012-09-13T06:25:41.156250Z
+cc51fd93556cb2c25aefd885e9b31540
+2012-09-13T06:43:50.204111Z
+205099
 sx_java_120827_mengfansheng
 
 
@@ -58,7 +58,7 @@ sx_java_120827_mengfansheng
 
 
 
-906
+3397
 
 UserGroupDaoImp.java
 file
@@ -66,10 +66,10 @@ file
 
 
 
-2012-09-12T08:35:03.424512Z
-234b028c59db0410463ad00a59affa33
-2012-09-12T08:55:04.647824Z
-204471
+2012-09-13T06:25:41.156250Z
+0d6ef7efb401646b616cd9cbfd6f93d5
+2012-09-13T06:43:50.204111Z
+205099
 sx_java_120827_mengfansheng
 
 
@@ -92,7 +92,7 @@ sx_java_120827_mengfansheng
 
 
 
-902
+3543
 
 ShiftDaoImp.java
 file
@@ -100,10 +100,10 @@ file
 
 
 
-2012-09-12T08:35:03.424512Z
-8231908b5bdabad40a018f492c9ab1fc
-2012-09-12T08:55:04.647824Z
-204471
+2012-09-13T06:25:41.171875Z
+b69c42cf00b310317e1bf341c779fbfb
+2012-09-13T06:43:50.204111Z
+205099
 sx_java_120827_mengfansheng
 
 
@@ -126,7 +126,7 @@ sx_java_120827_mengfansheng
 
 
 
-727
+2584
 
 UserDaoImp.java
 file

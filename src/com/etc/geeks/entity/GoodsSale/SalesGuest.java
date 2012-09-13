@@ -6,7 +6,7 @@ public class SalesGuest {
 	String salesHostId=null;//销售信息主表ID
 	String salesGuestId=null;//销售信息从表ID
 	String unit=null;//计量单位
-	String goodsId=null;//商品ID
+	String goodsId=null;//商品ID 
 	double salesGuestNumber=0.0;//销售数量
 	double price=0.0;//销售价格
 	String priceType=null;//销售价格类型

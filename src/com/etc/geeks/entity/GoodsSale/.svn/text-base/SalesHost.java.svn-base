@@ -5,23 +5,23 @@ import java.util.Date;
 
 public class SalesHost {
 
-	Calendar salesHostDate=null;   //销售日期
+	Date salesHostDate=null;   //销售日期
 	String salesHostId=null;   //销售信息主表ID
 	String userId=null;        //销售员ID
 	public SalesHost() { 
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public SalesHost(Calendar salesHostDate, String salesHostId, String userId) {
+	public SalesHost(Date salesHostDate, String salesHostId, String userId) {
 		super();
 		this.salesHostDate = salesHostDate;
 		this.salesHostId = salesHostId;
 		this.userId = userId;
 	}
-	public Calendar getSalesHostDate() {
+	public Date getSalesHostDate() {
 		return salesHostDate;
 	}
-	public void setSalesHostDate(Calendar salesHostDate) {
+	public void setSalesHostDate(Date salesHostDate) {
 		this.salesHostDate = salesHostDate;
 	}
 	public String getSalesHostId() {
@@ -38,10 +38,11 @@ public class SalesHost {
 	}
 	@Override
 	public String toString() {
-		return "SalesHost [salesHostDate=" + salesHostDate + ", salesHostId="
+		return "SalesHost [salesHostDate=" + salesHostDate.toLocaleString() + ", salesHostId="
 				+ salesHostId + ", userId=" + userId + "]";
 	}
 
+	
 	
 	
 }
