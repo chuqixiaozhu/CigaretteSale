@@ -22,7 +22,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <form>
-    <a href="outPut_Goods_Url.action">Êä³ö</a>
+    <a href="output_Goods_Url.action?currentPage=1">Êä³ö</a>
     </form>
   </body>
 </html>

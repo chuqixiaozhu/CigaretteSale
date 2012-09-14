@@ -1,5 +1,9 @@
 package com.etc.geeks.entity.StorageManagement;
-
+/**
+ * 9.14 11:00 
+ * @author Administrator
+ *
+ */
 public class InStoreGuest {
 	private String inStoreGuestId;//入库信息从表ID
 	private String inStoreHostId;//入库信息主表ID

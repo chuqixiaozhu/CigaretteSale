@@ -78,13 +78,22 @@ public class InStoreHostDaoImp implements InStoreHostDao {
 	}
 
 	public List<InStoreHost> findByCheckDate(Date startDate, Date endDate) {
-		if(startDate.after(endDate))
+		if(startDate.compareTo(endDate)>0)
+		{
+			System.out.println("开始时间应早于结束时间");
 			return null;
+		}
+//		if(startDate.after(endDate))
+//			return null;
 		List<InStoreHost> all_List=findAll();
 		List<InStoreHost> _List=new ArrayList<InStoreHost>();
 		for(InStoreHost ish:all_List)
 		{
-			if(startDate.before(ish.getCheckDate())&&endDate.after(ish.getCheckDate()))
+//			if(startDate.before(ish.getCheckDate())&&endDate.after(ish.getCheckDate()))
+//			{
+//				_List.add(ish);
+//			}
+			if(startDate.compareTo(ish.getCheckDate())<=0&&endDate.compareTo(ish.getCheckDate())>=0)
 			{
 				_List.add(ish);
 			}
@@ -128,14 +137,23 @@ public class InStoreHostDaoImp implements InStoreHostDao {
 	}
 
 	public List<InStoreHost> findByInStoreDate(Date startDate, Date endDate) {
-		if(startDate.after(endDate))
+		if(startDate.compareTo(endDate)>0)
+		{
+			System.out.println("开始时间应早于结束时间");
 			return null;
+		}
+//		if(startDate.after(endDate))
+//			return null;
 		List<InStoreHost> all_List=findAll();
 		List<InStoreHost> _List=new ArrayList<InStoreHost>();
 		for(InStoreHost ish:all_List)
 		{
-			
-			if(startDate.before(ish.getInStoreDate())&&endDate.after(ish.getInStoreDate()))
+//
+//			if(startDate.before(ish.getInStoreDate())&&endDate.after(ish.getInStoreDate()))
+//			{
+//				_List.add(ish);
+//			}
+			if(startDate.compareTo(ish.getInStoreDate())<=0&&endDate.compareTo(ish.getInStoreDate())>=0)
 			{
 				_List.add(ish);
 			}

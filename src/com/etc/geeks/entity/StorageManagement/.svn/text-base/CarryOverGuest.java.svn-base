@@ -1,6 +1,10 @@
 package com.etc.geeks.entity.StorageManagement;
 
-
+/**
+ * 9.14 11:00 
+ * @author Administrator
+ *
+ */
 public class CarryOverGuest {
 	private String carryOverHostId;//库存结转主表ID
 	private String carryOverGuestId;//库存结转从表ID

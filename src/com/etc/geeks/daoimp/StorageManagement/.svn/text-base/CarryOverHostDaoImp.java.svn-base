@@ -102,18 +102,26 @@ public class CarryOverHostDaoImp implements CarryOverHostDao {
 
 	public List<CarryOverHost> findByCarryOverHostDate(Date startDate,
 			Date endDate) {
-		if(startDate.after(endDate))
+		if(startDate.compareTo(endDate)>0)
+		{
+			System.out.println("开始时间应早于结束时间");
 			return null;
+		}
+//		if(startDate.after(endDate))
+//			return null;
 		List<CarryOverHost> all_List=findAll();
 		List<CarryOverHost> _List=new ArrayList<CarryOverHost>();
 		for(CarryOverHost coh:all_List)
 		{
 			
-			if(startDate.before(coh.getCarryOverHostDate())&&endDate.after(coh.getCarryOverHostDate()))
+//			if(startDate.before(coh.getCarryOverHostDate())&&endDate.after(coh.getCarryOverHostDate()))
+//			{
+//				_List.add(coh);
+//			}
+			if(startDate.compareTo(coh.getCarryOverHostDate())<=0&&endDate.compareTo(coh.getCarryOverHostDate())>=0)
 			{
 				_List.add(coh);
 			}
-			
 			
 		}
 		if(!_List.isEmpty())

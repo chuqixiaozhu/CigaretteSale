@@ -42,7 +42,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </c:forEach>
     <tr>
     <td><a href="">首页</a></td>
-    <td><a href="">上一页</a></td>
+    <!-- <% //if(pageBean.currentPage == 1) {%>
+    <td>上一页</td>
+    <%//} else {%>
+    <td><a href="output.action?pageBean.currentPage=${pageBean.currentPage-1}">上一页</a></td>
+    <%//} %>
+     -->
+    <td><a href="">上一页</a></td> 
     <td><a href="">下一页</a></td>
     <td><a href="">末页</a></td>
     </tr>

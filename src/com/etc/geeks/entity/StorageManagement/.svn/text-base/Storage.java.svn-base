@@ -1,5 +1,9 @@
 package com.etc.geeks.entity.StorageManagement;
-
+/**
+ * 9.14 11:00 
+ * @author Administrator
+ *
+ */
 public class Storage {
 	private String goodsId;//商品ID
 	private double storageNumber;//数量

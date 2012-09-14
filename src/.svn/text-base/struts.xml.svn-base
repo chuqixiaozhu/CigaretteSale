@@ -2,7 +2,8 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
 <package name="GoodsInformation" extends="struts-default">
-<action name="*_*_Url" class="{2}Action" method="{1}">
+<action name="*_*_Url" class="com.etc.geeks.action.GoodsInformation.{2}Action" method="{1}">
+<!-- <action name="output" class="com.etc.geeks.action.GoodsInformation.GoodsAction" method="output">  -->
 	<result name="success">show.jsp</result>
 	<result name="false">index.jsp</result>
 </action>

@@ -2,7 +2,11 @@ package com.etc.geeks.entity.StorageManagement;
 
 
 import java.util.Date;
-
+/**
+ * 9.14 11:00 
+ * @author Administrator
+ *
+ */
 public class InStoreHost {
 	private String checkerId;//审核人ID
 	private String checkFlag;//审核标志

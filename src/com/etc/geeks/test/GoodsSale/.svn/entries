@@ -1,15 +1,15 @@
 10
 
 dir
-205640
+206103
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/test/GoodsSale
 http://10.188.181.187/repos
 
 
 
-2012-09-13T02:01:54.595983Z
-204732
-sx_java_120827_chenzhonglin
+2012-09-14T09:35:38.832221Z
+206041
+sx_java_120827_hongxinxin
 
 
 
@@ -28,7 +28,7 @@ ef9f6835-dc2d-4211-bea4-54f3b24ac1c9
 
 Test.java
 file
-205645
+
 
 
 
@@ -59,4 +59,106 @@ sx_java_120827_pengzhen
 
 
 1904
+
+Test_CarryOverDao.java
+file
+
+
+
+
+2012-09-14T09:32:17.953125Z
+8bd2724b410204aa16b630a40bb998ab
+2012-09-14T09:26:51.229705Z
+206027
+sx_java_120827_hongxinxin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2431
+
+Test_Storage.java
+file
+
+
+
+
+2012-09-14T09:32:17.968750Z
+7b5dfa741e059371f8cc0efbc52e9fd6
+2012-09-14T09:35:38.832221Z
+206041
+sx_java_120827_hongxinxin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+778
+
+Test_InStoreDao.java
+file
+
+
+
+
+2012-09-14T09:32:17.968750Z
+d7ba168491d61b184ba76ec00bde6940
+2012-09-14T09:26:38.675444Z
+206026
+sx_java_120827_hongxinxin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2514
 

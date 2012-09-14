@@ -2,7 +2,11 @@ package com.etc.geeks.entity.StorageManagement;
 
 
 import java.util.Date;
-
+/**
+ * 9.14 11:00 
+ * @author Administrator
+ *
+ */
 public class CarryOverHost {
 	private String carryOverHostId;//统计主表ID
 	private String userId;//统计者ID
