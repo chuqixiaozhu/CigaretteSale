@@ -8,10 +8,8 @@ import java.util.List;
 import oracle.jdbc.rowset.OracleCachedRowSet;
 
 import com.etc.geeks.dao.Statistics.StatisticsHostDao;
-import com.etc.geeks.entity.Statistics.StatisticsGuest;
 import com.etc.geeks.entity.Statistics.StatisticsHost;
 import com.etc.geeks.util.DbOperation;
-import com.sun.org.apache.bcel.internal.generic.NEW;
 
 public class StatisticsHostDaoImp implements StatisticsHostDao {
 

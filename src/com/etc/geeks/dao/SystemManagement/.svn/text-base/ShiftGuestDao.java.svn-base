@@ -3,7 +3,6 @@ package com.etc.geeks.dao.SystemManagement;
 import java.util.List;
 
 import com.etc.geeks.entity.SystemManagement.ShiftGuest;
-import com.etc.geeks.entity.SystemManagement.ShiftHost;
 
 public interface ShiftGuestDao {
 	/**
@@ -35,7 +34,19 @@ public interface ShiftGuestDao {
 	 * @param shiftId
 	 * @return
 	 */
-	public abstract ShiftHost findById(String shiftGuestId);
+	public abstract ShiftGuest findByGuestId(String shiftGuestId);
+	/**
+	 * 返回由ID找到的对象
+	 * @param shiftId
+	 * @return
+	 */
+	public abstract ShiftGuest findByHostId(String shiftHostId);
+	/**
+	 * 返回由ID找到的对象
+	 * @param shiftId
+	 * @return
+	 */
+	public abstract ShiftGuest findByUserId(String userId);
 	/**
 	 * 返回所有对象
 	 * @return

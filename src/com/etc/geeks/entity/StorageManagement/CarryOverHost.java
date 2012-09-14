@@ -4,20 +4,19 @@ package com.etc.geeks.entity.StorageManagement;
 import java.util.Date;
 
 public class CarryOverHost {
-	private String userId;//统计者ID
-	private Date date;//统计时间
 	private String carryOverHostId;//统计主表ID
-	public String getUserId() {
-		return userId;
+	private String userId;//统计者ID
+	private Date carryOverHostDate;//统计时间
+	public CarryOverHost() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	public void setUserId(String userId) {
+	public CarryOverHost(String carryOverHostId, String userId,
+			Date carryOverHostDate) {
+		super();
+		this.carryOverHostId = carryOverHostId;
 		this.userId = userId;
-	}
-	public Date getDate() {
-		return date;
-	}
-	public void setDate(Date date) {
-		this.date = date;
+		this.carryOverHostDate = carryOverHostDate;
 	}
 	public String getCarryOverHostId() {
 		return carryOverHostId;
@@ -25,22 +24,26 @@ public class CarryOverHost {
 	public void setCarryOverHostId(String carryOverHostId) {
 		this.carryOverHostId = carryOverHostId;
 	}
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public Date getCarryOverHostDate() {
+		return carryOverHostDate;
+	}
+	public void setCarryOverHostDate(Date carryOverHostDate) {
+		this.carryOverHostDate = carryOverHostDate;
+	}
 	@Override
 	public String toString() {
-		return "CarryOverHost [carryOverHostId=" + carryOverHostId + ", date="
-				+ date + ", userId=" + userId + "]";
-	}
-	public CarryOverHost(String userId, Date date, String carryOverHostId) {
-		super();
-		this.userId = userId;
-		this.date = date;
-		this.carryOverHostId = carryOverHostId;
-	}
-	public CarryOverHost() {
-		super();
-		// TODO Auto-generated constructor stub
+		return "CarryOverHost [carryOverHostDate=" + carryOverHostDate
+				+ ", carryOverHostId=" + carryOverHostId + ", userId=" + userId
+				+ "]";
 	}
 	
+
 
 	
 }

@@ -15,7 +15,7 @@ public  class ShiftHostDaoImp implements ShiftHostDao {
 
 	public int addShiftHost(ShiftHost shiftHost) {
 		int result = DbOperation.executeUpdate(
-				"insert into Authority values(?, ?)",
+				"insert into Authority values(?, ?,?)",
 				new Object[] { shiftHost.getShiftHostId(),shiftHost.getStartTime(),shiftHost.getEndTime()
 						});
         return result;
@@ -39,8 +39,8 @@ public  class ShiftHostDaoImp implements ShiftHostDao {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			ResultSet rs = pstmt.executeQuery();
 			while(rs.next()) {
-				ShiftHost shift = new ShiftHost(rs.getString(1), rs.getString(2),rs.getString(3));
-				list.add(shift);
+				ShiftHost shiftHost = new ShiftHost(rs.getString(1), rs.getString(2),rs.getString(3));
+				list.add(shiftHost);
 			}
 			DbOperation.closeAll(rs, pstmt, conn);
 			return list;
@@ -78,7 +78,7 @@ public  class ShiftHostDaoImp implements ShiftHostDao {
 	}
 
 	public int updateShiftHost(ShiftHost shiftHost) {
-		String sql="update Authority set   shiftIHostd = ?,startTime = ? ,endTime = ? where shiftHostId=?";
+		String sql="update Authority set   shiftHostId = ?,startTime = ? ,endTime = ? where shiftHostId=?";
 		int result = DbOperation.executeUpdate(sql,
 				new Object[]{
 				shiftHost.getShiftHostId()

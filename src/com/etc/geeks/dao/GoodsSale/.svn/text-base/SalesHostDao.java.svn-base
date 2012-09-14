@@ -1,10 +1,8 @@
 package com.etc.geeks.dao.GoodsSale;
 
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import com.etc.geeks.entity.GoodsSale.SalesGuest;
 import com.etc.geeks.entity.GoodsSale.SalesHost;
 
 public interface SalesHostDao {

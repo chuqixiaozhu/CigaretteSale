@@ -7,7 +7,7 @@ public class User {
 	private String gender;//性别
 	private String authorityId;//权限
 	private String userGroupId;//用户组ID
-	private String shiftId;//班次ID
+	private String shiftHostId;//班次ID
 	public User(String userId, String userName, String password, String gender,
 			String authorityId, String userGroupId, String shiftId) {
 		super();
@@ -17,7 +17,7 @@ public class User {
 		this.gender = gender;
 		this.authorityId = authorityId;
 		this.userGroupId = userGroupId;
-		this.shiftId = shiftId;
+		this.shiftHostId = shiftId;
 	}
 	public User(Object[] objects) {
 		super();
@@ -104,12 +104,12 @@ public class User {
 	 * @return the shiftId
 	 */
 	public String getShiftId() {
-		return shiftId;
+		return shiftHostId;
 	}
 	/**
 	 * @param shiftId the shiftId to set
 	 */
 	public void setShiftId(String shiftId) {
-		this.shiftId = shiftId;
+		this.shiftHostId = shiftId;
 	}
 }

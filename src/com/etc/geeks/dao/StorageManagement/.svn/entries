@@ -1,15 +1,15 @@
 10
 
 dir
-205326
+205640
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement
 http://10.188.181.187/repos
 
 
 
-2012-09-12T08:53:37.296155Z
-204470
-sx_java_120827_mengfansheng
+2012-09-14T03:29:28.437683Z
+205625
+sx_java_120827_chenzhonglin
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2012-09-12T08:35:03.221387Z
-32b53f6fac363f5e6b54f3e72c66eca2
-2012-09-12T08:53:37.296155Z
-204470
-sx_java_120827_mengfansheng
+2012-09-14T03:12:41.062500Z
+2383e41cf909b0c070bdce678d15c2e8
+2012-09-14T03:29:28.437683Z
+205625
+sx_java_120827_chenzhonglin
 
 
 
@@ -58,24 +58,19 @@ sx_java_120827_mengfansheng
 
 
 
-863
+1655
 
 InStoreHostDao.java
 file
+205642
 
 
 
-
-2012-09-12T08:35:03.221387Z
-dcd93ce86fbfb049551798dc1feb3d23
-2012-09-12T08:53:37.296155Z
-204470
-sx_java_120827_mengfansheng
-
-
-
-
-
+2012-09-14T03:13:55.656250Z
+c3eeb6316806d90f89e1d3f3994ecd45
+2012-09-14T03:40:56.905838Z
+205642
+sx_java_120827_pengzhen
 
 
 
@@ -92,7 +87,12 @@ sx_java_120827_mengfansheng
 
 
 
-931
+
+
+
+
+
+2115
 
 StorageDao.java
 file
@@ -100,11 +100,11 @@ file
 
 
 
-2012-09-12T08:09:03.018262Z
-c622bbff95740865f8c19f2265a391f7
-2012-09-12T08:35:15.206119Z
-204443
-sx_java_120827_mengfansheng
+2012-09-14T03:12:41.078125Z
+866c79f8fc7f50de5b1ee92ffdbeda4f
+2012-09-14T03:29:28.437683Z
+205625
+sx_java_120827_chenzhonglin
 
 
 
@@ -126,24 +126,19 @@ sx_java_120827_mengfansheng
 
 
 
-847
+1223
 
 CarryOverGuestDao.java
 file
+205642
 
 
 
-
-2012-09-12T08:35:03.221387Z
-f653bff94762937b6b48cdc1825687a9
-2012-09-12T08:53:37.296155Z
-204470
-sx_java_120827_mengfansheng
-
-
-
-
-
+2012-09-14T03:13:46.765625Z
+276eb108792bad571c3177fc90ab0d95
+2012-09-14T03:40:56.905838Z
+205642
+sx_java_120827_pengzhen
 
 
 
@@ -160,24 +155,24 @@ sx_java_120827_mengfansheng
 
 
 
-853
+
+
+
+
+
+1725
 
 CarryOverHostDao.java
 file
+205642
 
 
 
-
-2012-09-12T08:35:03.237012Z
-5812f3a3d2c0c528326634fb1fec7a7a
-2012-09-12T08:53:37.296155Z
-204470
-sx_java_120827_mengfansheng
-
-
-
-
-
+2012-09-14T03:13:51.062500Z
+75121bf6962381b487a3ce1b5295c8d0
+2012-09-14T03:40:56.905838Z
+205642
+sx_java_120827_pengzhen
 
 
 
@@ -194,5 +189,10 @@ sx_java_120827_mengfansheng
 
 
 
-933
+
+
+
+
+
+1810
 

@@ -6,7 +6,7 @@ public class InStoreGuest {
 	private String goodsId;//商品ID
 	private String unit;//计量单位
 	
-	private double number;//数量
+	private double inStoreGuestNumber;//数量
 	private double price;//单价
 	private double amount;//金额
 	public InStoreGuest() {
@@ -14,14 +14,14 @@ public class InStoreGuest {
 		// TODO Auto-generated constructor stub
 	}
 	public InStoreGuest(String inStoreGuestId, String inStoreHostId,
-			String goodsId, String unit, double number, double price,
-			double amount) {
+			String goodsId, String unit, double inStoreGuestNumber,
+			double price, double amount) {
 		super();
 		this.inStoreGuestId = inStoreGuestId;
 		this.inStoreHostId = inStoreHostId;
 		this.goodsId = goodsId;
 		this.unit = unit;
-		this.number = number;
+		this.inStoreGuestNumber = inStoreGuestNumber;
 		this.price = price;
 		this.amount = amount;
 	}
@@ -49,11 +49,11 @@ public class InStoreGuest {
 	public void setUnit(String unit) {
 		this.unit = unit;
 	}
-	public double getNumber() {
-		return number;
+	public double getInStoreGuestNumber() {
+		return inStoreGuestNumber;
 	}
-	public void setNumber(double number) {
-		this.number = number;
+	public void setInStoreGuestNumber(double inStoreGuestNumber) {
+		this.inStoreGuestNumber = inStoreGuestNumber;
 	}
 	public double getPrice() {
 		return price;
@@ -70,10 +70,10 @@ public class InStoreGuest {
 	@Override
 	public String toString() {
 		return "InStoreGuest [amount=" + amount + ", goodsId=" + goodsId
-				+ ", inStoreGuestId=" + inStoreGuestId + ", inStoreHostId="
-				+ inStoreHostId + ", number=" + number + ", price=" + price
+				+ ", inStoreGuestId=" + inStoreGuestId
+				+ ", inStoreGuestNumber=" + inStoreGuestNumber
+				+ ", inStoreHostId=" + inStoreHostId + ", price=" + price
 				+ ", unit=" + unit + "]";
 	}
-
 	
 }

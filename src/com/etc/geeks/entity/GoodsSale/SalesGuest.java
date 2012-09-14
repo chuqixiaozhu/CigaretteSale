@@ -1,6 +1,5 @@
 package com.etc.geeks.entity.GoodsSale;
 
-import java.util.Date;
 
 public class SalesGuest {
 	String salesHostId=null;//销售信息主表ID

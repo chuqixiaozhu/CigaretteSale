@@ -15,7 +15,7 @@ public class UserGroupDaoImp implements UserGroupDao {
 
 	public int addUserGroup(UserGroup userGroup) {
 		int result = DbOperation.executeUpdate(
-				"insert into UserGroup values(?, ?)",
+				"insert into UserGroup values(?, ?,?)",
 				new Object[] { userGroup.getAuthorityId(),
 						userGroup.getSuserGroupId(),
 						userGroup.getUserGroupName()

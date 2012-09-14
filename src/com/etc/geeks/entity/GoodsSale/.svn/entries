@@ -1,15 +1,15 @@
 10
 
 dir
-205326
+205640
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsSale
 http://10.188.181.187/repos
 
 
 
-2012-09-13T03:51:49.427557Z
-204961
-sx_java_120827_chenzhonglin
+2012-09-14T01:45:02.300299Z
+205466
+sx_java_120827_pengzhen
 
 
 
@@ -32,11 +32,11 @@ file
 
 
 
-2012-09-13T05:40:58.031250Z
-62f52c12dc2b220d0b0b09cf3dfeaaf2
-2012-09-13T03:51:49.427557Z
-204961
-sx_java_120827_chenzhonglin
+2012-09-14T01:16:50.921875Z
+acd3a34562320ebb35bac36b7ac2fc94
+2012-09-14T01:43:59.888267Z
+205461
+sx_java_120827_pengzhen
 
 
 
@@ -58,7 +58,7 @@ sx_java_120827_chenzhonglin
 
 
 
-2378
+2354
 
 SalesHost.java
 file
@@ -66,11 +66,11 @@ file
 
 
 
-2012-09-13T05:40:58.031250Z
-6726b629cef1d82364ffbb5b48c30245
-2012-09-13T03:50:53.501368Z
-204958
-sx_java_120827_chenzhonglin
+2012-09-14T01:17:57.437500Z
+219005d2781f0497c3a6f180772fed09
+2012-09-14T01:45:02.300299Z
+205466
+sx_java_120827_pengzhen
 
 
 
@@ -92,5 +92,5 @@ sx_java_120827_chenzhonglin
 
 
 
-1170
+1125
 

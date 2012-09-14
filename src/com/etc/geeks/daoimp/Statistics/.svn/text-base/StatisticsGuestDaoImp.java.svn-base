@@ -7,7 +7,6 @@ import java.util.List;
 import oracle.jdbc.rowset.OracleCachedRowSet;
 
 import com.etc.geeks.dao.Statistics.StatisticsGuestDao;
-import com.etc.geeks.entity.GoodsInformation.Goods;
 import com.etc.geeks.entity.Statistics.StatisticsGuest;
 import com.etc.geeks.util.DbOperation;
 
@@ -16,7 +15,7 @@ public class StatisticsGuestDaoImp implements StatisticsGuestDao {
 	public int addStatisticGuest(StatisticsGuest sg) {
 		// TODO Auto-generated method stub
 		int result = DbOperation.executeUpdate(
-				"insert into StatisticGuest values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?)",
+				"insert into StatisticsGuest values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?)",
 				new Object[]{sg.getStatisticsGuestId(),sg.getStatisticsHostId(),
 						sg.getGoodsId(),sg.getLastNumber(),sg.getLastPrice(),sg.getLastAmount(),
 						sg.getNowInStoreNumber(),sg.getNowInStoreCost(),sg.getNowInStoreAmount(),
@@ -26,10 +25,10 @@ public class StatisticsGuestDaoImp implements StatisticsGuestDao {
 		return result;
 	}
 
-	public int deleteById(String statisticGuestId) {
+	public int deleteById(String statisticsGuestId) {
 		// TODO Auto-generated method stub
 		int result = DbOperation.executeUpdate(
-				"delete from StatisticGuest where statisticGuestId = ?", new Object[] { statisticGuestId });
+				"delete from StatisticsGuest where statisticsGuestId = ?", new Object[] { statisticsGuestId });
 		return result;
 	}
 
@@ -93,7 +92,7 @@ public class StatisticsGuestDaoImp implements StatisticsGuestDao {
 		return null;
 	}
 
-	public int updateStatisticGuest(StatisticsGuest sg) {
+	public int updateStatisticsGuest(StatisticsGuest sg) {
 		// TODO Auto-generated method stub
 		int result = DbOperation.executeUpdate(
 				"update StatisticsGuest set statisticsHostId = ? goodsId = ?" +

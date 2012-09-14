@@ -1,47 +1,11 @@
 K 25
 svn:wc:ra_dav:version-url
 V 164
-/repos/!svn/ver/205050/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsInformation
+/repos/!svn/ver/205455/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsInformation
 END
 Unit.java
 K 25
 svn:wc:ra_dav:version-url
 V 174
-/repos/!svn/ver/204792/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsInformation/Unit.java
-END
-ChangePriceGuest.java
-K 25
-svn:wc:ra_dav:version-url
-V 186
-/repos/!svn/ver/204704/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsInformation/ChangePriceGuest.java
-END
-Supplier.java
-K 25
-svn:wc:ra_dav:version-url
-V 178
-/repos/!svn/ver/204721/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsInformation/Supplier.java
-END
-ChangePriceHost.java
-K 25
-svn:wc:ra_dav:version-url
-V 185
-/repos/!svn/ver/204982/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsInformation/ChangePriceHost.java
-END
-GoodsSmallClass.java
-K 25
-svn:wc:ra_dav:version-url
-V 185
-/repos/!svn/ver/204741/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsInformation/GoodsSmallClass.java
-END
-Goods.java
-K 25
-svn:wc:ra_dav:version-url
-V 175
-/repos/!svn/ver/205050/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsInformation/Goods.java
-END
-GoodsLargeClass.java
-K 25
-svn:wc:ra_dav:version-url
-V 185
-/repos/!svn/ver/204735/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsInformation/GoodsLargeClass.java
+/repos/!svn/ver/205455/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/GoodsInformation/Unit.java
 END

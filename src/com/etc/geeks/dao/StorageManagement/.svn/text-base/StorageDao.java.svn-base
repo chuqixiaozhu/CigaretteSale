@@ -3,40 +3,49 @@ package com.etc.geeks.dao.StorageManagement;
 import java.util.List;
 
 import com.etc.geeks.entity.StorageManagement.Storage;
-
+/**
+ * 9.14 11:00
+ * @author Administrator
+ *
+ */
 public interface StorageDao {
 	/**
-	 * 增加一个库存信息表单
-	 * @param se
-	 * @return
+	 * 向库存信息表增加一条库存信息
+	 * 
+	 * @param storage
+	 * @return 返回操作所影响的记录条数,返回0表示操作失败
 	 */
-	public abstract int addStorage(Storage se);
+	public int addStorage(Storage storage);
+
 	/**
-	 * 根据表单号删除一个库存信息表单信息
+	 * 根据表单号删除一条库存信息表单信息
+	 * 
 	 * @param goodsId
-	 * @return
+	 * @return 返回操作所影响的记录条数,返回0表示操作失败
 	 */
-	public abstract int deleteById(String goodsId);
-	
+	public int deleteByGoodsId(String goodsId);
+
 	/**
 	 * 更新一个库存信息表单信息
-	 * @param se
-	 * @return
+	 * 
+	 * @param storage
+	 * @return 返回操作所影响的记录条数,返回0表示操作失败
 	 */
-	public abstract int updateStorage(Storage se);
-	
+	public int updateStorage(Storage storage);
+
 	/**
 	 * 根据表单ID查找一个库存信息表单信息
+	 * 
 	 * @param goodsId
-	 * @return
+	 * @return 返回相应的Storage对象,查找失败返回null
 	 */
-	public abstract Storage findById(String goodsId);
-	
+	public Storage findByGoodsId(String goodsId);
+
 	/**
 	 * 查找所有库存信息表单信息
-	 * @return
+	 * 
+	 * @return 返回相应的Storage对象集合,查找失败返回null
 	 */
-	public abstract List<Storage> findAll();
-
+	public List<Storage> findAll();
 
 }

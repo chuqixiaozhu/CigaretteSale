@@ -1,14 +1,14 @@
 10
 
 dir
-205326
+205640
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/entity/StorageManagement
 http://10.188.181.187/repos
 
 
 
-2012-09-13T09:41:02.004063Z
-205324
+2012-09-14T03:24:11.939403Z
+205613
 sx_java_120827_chenzhonglin
 
 
@@ -100,11 +100,11 @@ file
 
 
 
-2012-09-13T02:32:06.156250Z
-1c974a044d754717acbab7df1e4d5668
-2012-09-13T02:28:54.044133Z
-204807
-sx_java_120827_hongxinxin
+2012-09-14T03:12:41.531250Z
+7b3c97bc09b30f982651bb1c053cd161
+2012-09-14T03:24:11.939403Z
+205613
+sx_java_120827_chenzhonglin
 
 
 
@@ -126,7 +126,7 @@ sx_java_120827_hongxinxin
 
 
 
-2092
+2261
 
 CarryOverHost.java
 file
@@ -134,11 +134,11 @@ file
 
 
 
-2012-09-13T05:40:58.093750Z
-5189c44c4c0aa0eed720684ccbe88e6a
-2012-09-13T04:01:40.001200Z
-204970
-sx_java_120827_hongxinxin
+2012-09-14T03:12:41.531250Z
+8f2179832933c99f6870359548648461
+2012-09-14T03:24:11.939403Z
+205613
+sx_java_120827_chenzhonglin
 
 
 
@@ -160,7 +160,7 @@ sx_java_120827_hongxinxin
 
 
 
-1074
+1241
 
 InStoreGuest.java
 file
@@ -168,11 +168,11 @@ file
 
 
 
-2012-09-13T02:32:06.171875Z
-1ea9509da6eec82a497204eb609cf707
-2012-09-13T02:29:28.193495Z
-204808
-sx_java_120827_hongxinxin
+2012-09-14T01:28:57.687500Z
+b482b649e85dfb18d72b45145a3a3abc
+2012-09-14T01:47:07.325133Z
+205476
+sx_java_120827_chenzhonglin
 
 
 
@@ -194,5 +194,5 @@ sx_java_120827_hongxinxin
 
 
 
-2029
+2176
 

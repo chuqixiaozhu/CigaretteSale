@@ -28,7 +28,4 @@ public class Unit {
 	public String toString() {
 		return "Unit [unit=" + unit + ", unitValue=" + unitValue + "]";
 	}
-	
-
-
 }

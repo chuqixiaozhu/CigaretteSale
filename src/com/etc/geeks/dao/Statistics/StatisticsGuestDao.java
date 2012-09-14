@@ -17,21 +17,21 @@ public interface StatisticsGuestDao {
 	 * @param statisticGuestId
 	 * @return
 	 */
-	public abstract int deleteById(String statisticGuestId);
+	public abstract int deleteById(String statisticsGuestId);
 	
 	/**
 	 * 更新表单
 	 * @param sg
 	 * @return
 	 */
-	public abstract int updateStatisticGuest(StatisticsGuest sg);
+	public abstract int updateStatisticsGuest(StatisticsGuest sg);
 	
 	/**
 	 * 根据ID查找表单
 	 * @param statisticGuestId
 	 * @return
 	 */
-	public abstract StatisticsGuest findById(String statisticGuestId);
+	public abstract StatisticsGuest findById(String statisticsGuestId);
 	
 	/**
 	 * 查找所有表单信息

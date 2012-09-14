@@ -1,6 +1,5 @@
 package com.etc.geeks.entity.GoodsSale;
 
-import java.util.Calendar;
 import java.util.Date;
 
 public class SalesHost {
@@ -38,7 +37,7 @@ public class SalesHost {
 	}
 	@Override
 	public String toString() {
-		return "SalesHost [salesHostDate=" + salesHostDate.toLocaleString() + ", salesHostId="
+		return "SalesHost [salesHostDate=" + salesHostDate + ", salesHostId="
 				+ salesHostId + ", userId=" + userId + "]";
 	}
 

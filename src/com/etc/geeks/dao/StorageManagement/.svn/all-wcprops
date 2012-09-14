@@ -1,29 +1,35 @@
 K 25
 svn:wc:ra_dav:version-url
 V 162
-/repos/!svn/ver/204470/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement
+/repos/!svn/ver/205625/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement
 END
 InStoreGuestDao.java
 K 25
 svn:wc:ra_dav:version-url
 V 183
-/repos/!svn/ver/204470/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement/InStoreGuestDao.java
+/repos/!svn/ver/205625/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement/InStoreGuestDao.java
 END
 InStoreHostDao.java
 K 25
 svn:wc:ra_dav:version-url
 V 182
-/repos/!svn/ver/204470/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement/InStoreHostDao.java
+/repos/!svn/ver/205642/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement/InStoreHostDao.java
+END
+StorageDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/repos/!svn/ver/205625/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement/StorageDao.java
 END
 CarryOverGuestDao.java
 K 25
 svn:wc:ra_dav:version-url
 V 185
-/repos/!svn/ver/204470/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement/CarryOverGuestDao.java
+/repos/!svn/ver/205642/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement/CarryOverGuestDao.java
 END
 CarryOverHostDao.java
 K 25
 svn:wc:ra_dav:version-url
 V 184
-/repos/!svn/ver/204470/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement/CarryOverHostDao.java
+/repos/!svn/ver/205642/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/StorageManagement/CarryOverHostDao.java
 END

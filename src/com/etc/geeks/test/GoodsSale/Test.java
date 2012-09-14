@@ -2,11 +2,9 @@ package com.etc.geeks.test.GoodsSale;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
 import com.etc.geeks.dao.GoodsSale.SalesHostDao;
 import com.etc.geeks.daoimp.GoodsSale.SalesHostDaoImp;
-import com.etc.geeks.entity.GoodsSale.SalesHost;
 
 public class Test {
 	

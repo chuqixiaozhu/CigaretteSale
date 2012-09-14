@@ -1,15 +1,15 @@
 10
 
 dir
-205326
+205640
 http://10.188.181.187/repos/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/src/com/etc/geeks/dao/SystemManagement
 http://10.188.181.187/repos
 
 
 
-2012-09-13T09:20:41.019993Z
-205300
-sx_java_120827_mengfansheng
+2012-09-14T03:39:14.475212Z
+205639
+sx_java_120827_pengzhen
 
 
 
@@ -134,11 +134,11 @@ file
 
 
 
-2012-09-13T09:14:10.750000Z
-72bc0e1333fe166903ba84ec85cb32f7
-2012-09-13T09:20:41.019993Z
-205300
-sx_java_120827_mengfansheng
+2012-09-14T03:10:34.203125Z
+53ab7577f4862c3b826dd454a557296a
+2012-09-14T03:39:14.475212Z
+205639
+sx_java_120827_pengzhen
 
 
 
@@ -160,7 +160,7 @@ sx_java_120827_mengfansheng
 
 
 
-1014
+1238
 
 AuthorityDao.java
 file
