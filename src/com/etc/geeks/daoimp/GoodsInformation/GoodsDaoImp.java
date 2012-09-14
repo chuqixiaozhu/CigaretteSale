@@ -1,19 +1,15 @@
 package com.etc.geeks.daoimp.GoodsInformation;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 import oracle.jdbc.rowset.OracleCachedRowSet;
 
-import com.etc.commom.PageBean;
-import com.etc.entity.Student;
 import com.etc.geeks.dao.GoodsInformation.GoodsDao;
 import com.etc.geeks.entity.GoodsInformation.Goods;
 import com.etc.geeks.util.DbOperation;
+import com.etc.geeks.util.PageBean;
 
 public class GoodsDaoImp implements GoodsDao {
 
@@ -161,34 +157,41 @@ public class GoodsDaoImp implements GoodsDao {
 		return result;
 	}
 	
-	public List<Student> findByPage(PageBean pageBean){
-		Connection con = dbOperation.getConnection();
-		ResultSet rs = null;
-		String sql = "select * from (select stu.* ,rownum rn from (select * from student order by sid asc )stu where rownum <=?) where rn>=?";
-		List<Student> slist = new ArrayList<Student>();
+	public List<Goods> findByPage(PageBean pageBean){
+		String sql = "select * from (select gods.* ,rownum rn from (select * from Goods order by goodsId asc )gods where rownum <=?) where rn>=?";
+		List<Goods> list = new ArrayList<Goods>();
+		Object[] objects = new Object[]{PageBean.pageSize * pageBean.getCurrentPage(),
+				PageBean.pageSize * (pageBean.getCurrentPage() - 1) + 1};
+		OracleCachedRowSet ocrs = DbOperation.executeQuery(sql, objects);
 		try {
-			PreparedStatement pstmt = con.prepareStatement(sql);
-			pstmt.setInt(1, PageBean.pageSize*pageBean.getCurrentPage()); 
-			pstmt.setInt(2, PageBean.pageSize*(pageBean.getCurrentPage()-1)+1); 
-			rs= pstmt.executeQuery();
-			Student s = null;
-			while(rs.next()){
-				s = new Student(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getString(4));
-				slist.add(s);
+			while(ocrs.next()) {
+				Goods goods = new Goods(
+						ocrs.getString(1), ocrs.getString(2),
+						ocrs.getString(3), ocrs.getString(4),
+						ocrs.getString(5), ocrs.getString(6),
+						ocrs.getString(7), ocrs.getString(8),
+						ocrs.getString(9), ocrs.getString(10),
+						ocrs.getString(11), ocrs.getDouble(12),
+						ocrs.getDouble(13), ocrs.getDouble(14)
+						);
+				list.add(goods);
 			}
-			return slist;
-		} catch (Exception e) {
+			if(!list.isEmpty()) {
+				return list;
+			} else {
+				return null;
+			}
+		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			return null;
-		}finally{
+		} finally {
 			try {
-				//rs.close();
-				con.close();
+				ocrs.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
+		return null;
 	}
 }

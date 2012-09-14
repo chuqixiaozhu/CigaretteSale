@@ -3,6 +3,7 @@ package com.etc.geeks.dao.GoodsInformation;
 import java.util.List;
 
 import com.etc.geeks.entity.GoodsInformation.Goods;
+import com.etc.geeks.util.PageBean;
 
 
 public interface GoodsDao {
@@ -47,5 +48,12 @@ public interface GoodsDao {
 	 * @return
 	 */
 	public abstract List<Goods> findAllGoods();
+	
+	/**
+	 * 分页查找
+	 * @param pageBean
+	 * @return
+	 */
+	public List<Goods> findByPage(PageBean pageBean);
 
 }

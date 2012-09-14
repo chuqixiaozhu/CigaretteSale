@@ -1,0 +1,38 @@
+package com.etc.geeks.action.GoodsInformation;
+
+import java.util.List;
+
+import com.etc.geeks.dao.GoodsInformation.GoodsDao;
+import com.etc.geeks.daoimp.GoodsInformation.GoodsDaoImp;
+import com.etc.geeks.entity.GoodsInformation.Goods;
+import com.etc.geeks.util.PageBean;
+
+public class GoodsAction {
+	private List<Goods> goodsList;
+
+	/**
+	 * @return the goodsList
+	 */
+	public List<Goods> getGoodsList() {
+		return goodsList;
+	}
+
+	/**
+	 * @param goodsList the goodsList to set
+	 */
+	public void setGoodsList(List<Goods> goodsList) {
+		this.goodsList = goodsList;
+	}
+	
+	String outPut()	{
+		GoodsDao goodsDao = new GoodsDaoImp();
+		PageBean pageBean = new PageBean(1);
+		goodsList = goodsDao.findByPage(pageBean);
+		if(goodsList != null) {
+			return "success";
+		} else {
+			return "false";
+		}
+	}
+
+}

@@ -9,6 +9,7 @@ import oracle.jdbc.rowset.OracleCachedRowSet;
 import com.etc.geeks.dao.GoodsInformation.GoodsDao;
 import com.etc.geeks.entity.GoodsInformation.Goods;
 import com.etc.geeks.util.DbOperation;
+import com.etc.geeks.util.PageBean;
 
 public class GoodsDaoImp implements GoodsDao {
 
@@ -154,5 +155,43 @@ public class GoodsDaoImp implements GoodsDao {
 				};
 		int result = DbOperation.executeUpdate(sql, objects);
 		return result;
+	}
+	
+	public List<Goods> findByPage(PageBean pageBean){
+		String sql = "select * from (select gods.* ,rownum rn from (select * from Goods order by goodsId asc )gods where rownum <=?) where rn>=?";
+		List<Goods> list = new ArrayList<Goods>();
+		Object[] objects = new Object[]{PageBean.pageSize * pageBean.getCurrentPage(),
+				PageBean.pageSize * (pageBean.getCurrentPage() - 1) + 1};
+		OracleCachedRowSet ocrs = DbOperation.executeQuery(sql, objects);
+		try {
+			while(ocrs.next()) {
+				Goods goods = new Goods(
+						ocrs.getString(1), ocrs.getString(2),
+						ocrs.getString(3), ocrs.getString(4),
+						ocrs.getString(5), ocrs.getString(6),
+						ocrs.getString(7), ocrs.getString(8),
+						ocrs.getString(9), ocrs.getString(10),
+						ocrs.getString(11), ocrs.getDouble(12),
+						ocrs.getDouble(13), ocrs.getDouble(14)
+						);
+				list.add(goods);
+			}
+			if(!list.isEmpty()) {
+				return list;
+			} else {
+				return null;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				ocrs.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return null;
 	}
 }

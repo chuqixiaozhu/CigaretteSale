@@ -1,11 +1,13 @@
-K 25
-svn:wc:ra_dav:version-url
-V 130
-/repos/!svn/ver/202274/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/WebRoot
 END
 index.jsp
 K 25
 svn:wc:ra_dav:version-url
 V 140
-/repos/!svn/ver/202274/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/WebRoot/index.jsp
+/repos/!svn/ver/205950/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/WebRoot/index.jsp
+END
+show.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/!svn/ver/205950/shixun/12/java/sx_java_120827_Geeks/00_%E9%A1%B9%E7%9B%AE%E6%BA%90%E4%BB%A3%E7%A0%81/CigaretteSales/WebRoot/show.jsp
 END

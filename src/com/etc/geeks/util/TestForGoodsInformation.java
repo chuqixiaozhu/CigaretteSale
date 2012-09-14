@@ -13,6 +13,13 @@ public class TestForGoodsInformation {
 	 */
 	public static void main(String[] args) {
 		GoodsDao goodsDao = new GoodsDaoImp();
+		
+		PageBean pageBean = new PageBean(2);
+		List<Goods> list = goodsDao.findByPage(pageBean);
+		for(Goods t : list) {
+			System.out.println(t.toString());
+		}
+		
 		/*List<Goods> list = null;
 		list = goodsDao.findAllGoods();
 		for(Goods t : list) {
@@ -28,7 +35,7 @@ public class TestForGoodsInformation {
 			System.out.println("can't find.");
 		}*/
 		
-/*增加*/
+/*增加
 		
 		Goods newGoods = new Goods("极品芙蓉王",
 				"01", "01",
@@ -45,7 +52,7 @@ public class TestForGoodsInformation {
 		for(Goods t : list) {
 			System.out.println(t);
 		}
-		/**/
+		*/
 		
 /*更新
 		Goods change = new Goods("003", "芙蓉王",
