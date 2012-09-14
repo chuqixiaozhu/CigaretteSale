@@ -30,15 +30,16 @@ public class TestForGoodsInformation {
 		
 /*增加*/
 		
-		Goods newGoods = new Goods("小熊猫",
-									"01", "01",
-									"03", "001",
-									"100mm", "0925113012",
-									null, null,
-									"条", 120,
-									150, 120
-									);
+		Goods newGoods = new Goods("极品芙蓉王",
+				"01", "01",
+				"03", "001",
+				"100mm", "0925113012",
+				null, null,
+				"条", 120,
+				150, 120
+		);
 		goodsDao.addGoods(newGoods);
+
 		List<Goods> list = null;
 		list = goodsDao.findAllGoods();
 		for(Goods t : list) {

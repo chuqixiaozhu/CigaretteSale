@@ -1,11 +1,16 @@
 package com.etc.geeks.daoimp.GoodsInformation;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 import oracle.jdbc.rowset.OracleCachedRowSet;
 
+import com.etc.commom.PageBean;
+import com.etc.entity.Student;
 import com.etc.geeks.dao.GoodsInformation.GoodsDao;
 import com.etc.geeks.entity.GoodsInformation.Goods;
 import com.etc.geeks.util.DbOperation;
@@ -154,5 +159,36 @@ public class GoodsDaoImp implements GoodsDao {
 				};
 		int result = DbOperation.executeUpdate(sql, objects);
 		return result;
+	}
+	
+	public List<Student> findByPage(PageBean pageBean){
+		Connection con = dbOperation.getConnection();
+		ResultSet rs = null;
+		String sql = "select * from (select stu.* ,rownum rn from (select * from student order by sid asc )stu where rownum <=?) where rn>=?";
+		List<Student> slist = new ArrayList<Student>();
+		try {
+			PreparedStatement pstmt = con.prepareStatement(sql);
+			pstmt.setInt(1, PageBean.pageSize*pageBean.getCurrentPage()); 
+			pstmt.setInt(2, PageBean.pageSize*(pageBean.getCurrentPage()-1)+1); 
+			rs= pstmt.executeQuery();
+			Student s = null;
+			while(rs.next()){
+				s = new Student(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getString(4));
+				slist.add(s);
+			}
+			return slist;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}finally{
+			try {
+				//rs.close();
+				con.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 }
